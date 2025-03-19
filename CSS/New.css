@@ -1,0 +1,36 @@
+/* @media only screen and(width <= 4px){
+    body > main > div.woitems-container{
+    width: 100%;
+        margin: 120px -2%;
+    }
+    
+    body > main > div.woitems-container > div.newitem-container {
+    width: 90px;
+        height: 260px;
+        margin: 52px 11px;
+    }
+    body > main > div.woitems-container > div > div.price > span.current-price{
+      font-size: 10px;
+          color: #282c3f;
+          font-weight: 800;
+      }
+      
+      
+      body > main > div.woitems-container  div > div.price > span.original-price{
+      text-decoration: line-through;
+          color: #7e818c;
+          font-weight: 400;
+          margin-left:0px;
+          font-size: 9px;
+      }
+      
+      body > main > div.woitems-container > div> div.price > span.discount{
+      color: #ff905a;
+          font-weight: 700;
+          margin-left: -2px;
+          font-size: 6px;
+      }
+      body > main > div.woitems-container > div > button{
+        font-size: 13px;
+      }
+  } */
