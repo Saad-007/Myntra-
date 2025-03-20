@@ -137,7 +137,7 @@ const items = [
     },
     {
         id: '010',
-        image: '../assetsimg/Home/10.jpg',
+        image: '../assets/img/Home/10.jpg',
         company: 'Poque Stuke',
         item_name: `Tall Terracotta Vase`,
         original_price: 5999,
