@@ -1,7 +1,7 @@
 const items = [
     {
         id: '001',
-        image: '/assets/img/Women/10.jpg',
+        image: '../assets/img/Women/10.jpg',
         company: 'Spankle',
         item_name: `Ribbed T-shirt`,
         original_price: 999,
@@ -17,7 +17,7 @@ const items = [
     },
     {
         id: '002',
-        image: '/assets/img/Men/3.jpg',
+        image: '../assets/img/Men/3.jpg',
         company: 'GRACE KARIN',
         item_name: 'GRACE KARIN Girls Summer Dress',
         original_price: 1599,
@@ -32,7 +32,7 @@ const items = [
     },
     {
         id: '003',
-        image: '/assets/img/Beauty/4.jpg',
+        image: '../assets/img/Beauty/4.jpg',
         company: 'WDIRARA',
         item_name: `Slim Fit Linen Shirt`,
         original_price: 1599,
@@ -47,7 +47,7 @@ const items = [
     },
     {
         id: '004',
-        image: '/assets/img/Women/7.jpg',
+        image: '../assets/img/Women/7.jpg',
         company: 'Carpie',
         item_name: `Oversized T-shirt`,
         original_price: 1899,
@@ -62,7 +62,7 @@ const items = [
     },
     {
         id: '005',
-        image: '/assets/img/Home/3.jpg',
+        image: '../assets/img/Home/3.jpg',
         company: 'GRACE KARIN',
         item_name: '2-pack Airy Multiway Curtains',
         original_price: 1599,
@@ -77,7 +77,7 @@ const items = [
     },
     {
         id: '006',
-        image: '/assets/img/Women/15.jpg',
+        image: '../assets/img/Women/15.jpg',
         company: 'Shaza',
         item_name: 'Wide-cut Pull-on Pants',
         original_price: 999,
@@ -92,7 +92,7 @@ const items = [
     },
     {
         id: '007',
-        image: '/assets/img/Beauty/3.jpg',
+        image: '../assets/img/Beauty/3.jpg',
         company: 'GRACE KARIN',
         item_name: 'GRACE KARIN Girls Summer Dress',
         original_price: 1599,
@@ -107,7 +107,7 @@ const items = [
     },
     {
         id: '008',
-        image: '/assets/img/Men/4..jpg',
+        image: '../assets/img/Men/4..jpg',
         company: 'WDIRARA',
         item_name: `Slim Fit Linen Shirt`,
         original_price: 1599,
@@ -122,7 +122,7 @@ const items = [
     },
     {
         id: '009',
-        image: '/assets/img/Women/14.jpg',
+        image: '../assets/img/Women/14.jpg',
         company: 'Silvia',
         item_name: 'A-Line Tie-Strap Dress',
         original_price: 5999,
@@ -137,7 +137,7 @@ const items = [
     },
     {
         id: '010',
-        image: '/assets/img/Home/10.jpg',
+        image: '../assets/img/Home/10.jpg',
         company: 'Poque Stuke',
         item_name: `Tall Terracotta Vase`,
         original_price: 5999,
@@ -152,7 +152,7 @@ const items = [
     },
     {
         id: '011',
-        image: '/assets/img/Beauty/1.jpg',
+        image: '../assets/img/Beauty/1.jpg',
         company: 'Carlton London',
         item_name: 'Relaxed Fit Linen Resort Shirt',
         original_price: 1045,
@@ -167,7 +167,7 @@ const items = [
     },
     {
         id: '012',
-        image: '/assets/img/Men/7.jpg',
+        image: '../assets/img/Men/7.jpg',
         company: 'LYANER',
         item_name: `Relaxed Fit Linen Resort Shirt`,
         original_price: 999,
@@ -182,7 +182,7 @@ const items = [
     },
     {
         id: '013',
-        image: '/assets/img/Home/8.jpg',
+        image: '../assets/img/Home/8.jpg',
         company: 'Belle Poque',
         item_name: `Muslin Queen Duvet Cover Set`,
         original_price: 999,
@@ -197,7 +197,7 @@ const items = [
     },
     {
         id: '014',
-        image: '/assets/img/Men/15.jpg',
+        image: '../assets/img/Men/15.jpg',
         company: 'Squish',
         item_name: `Regular Fit Linen-blend Shirt`,
         original_price: 2999,
@@ -213,7 +213,7 @@ const items = [
     },
     {
         id: '015',
-        image: '/assets/img/Women/9.jpg',
+        image: '../assets/img/Women/9.jpg',
         company: 'Arshiner',
         item_name: 'Oversized Printed T-shirt',
         original_price: 999,
@@ -228,7 +228,7 @@ const items = [
     },
     {
         id: '016',
-        image: '/assets/img/Beauty/6.jpg',
+        image: '../assets/img/Beauty/6.jpg',
         company: 'Arshiner',
         item_name: 'Oversized Printed T-shirt',
         original_price: 999,
@@ -246,7 +246,7 @@ const items = [
 const New = [
     {
         id: '015',
-        image: '/assets/img/16.jpg',
+        image: '../assets/img/16.jpg',
         company: 'Carlton London',
         item_name: 'Kaftan dress',
         original_price: 1045,
@@ -263,7 +263,7 @@ const New = [
     },
     {
         id: '00016',
-        image: '/assets/img/016.jpg',
+        image: '../assets/img/016.jpg',
         company: 'CUKOO',
         item_name: 'Angled Contouring Brush',
         original_price: 2599,
@@ -278,7 +278,7 @@ const New = [
     },
     {
         id: '017',
-        image: '/assets/img/18.jpg',
+        image: '../assets/img/18.jpg',
         company: 'NUEVOSDAMAS',
         item_name: 'Balloon-sleeved shirt dress',
         original_price: 1599,
@@ -293,7 +293,7 @@ const New = [
     },
     {
         id: '0015',
-        image: '/assets/img/0015.jpg',
+        image: '../assets/img/0015.jpg',
         company: 'Carlton London',
         item_name: 'Kaftan dress',
         original_price: 1045,
@@ -308,7 +308,7 @@ const New = [
     },
     {
         id: '00018',
-        image: '/assets/img/018.jpg',
+        image: '../assets/img/018.jpg',
         company: 'Sunan',
         item_name: 'Makeup Brush Case',
         original_price: 999,
@@ -323,7 +323,7 @@ const New = [
     },
     {
         id: '0016',
-        image: '/assets/img/0016.jpg',
+        image: '../assets/img/0016.jpg',
         company: 'CUKOO',
         item_name: 'Flounced chiffon dress',
         original_price: 2599,
@@ -338,7 +338,7 @@ const New = [
     },
     {
         id: '018',
-        image: '/assets/img/19.jpg',
+        image: '../assets/img/19.jpg',
         company: 'Sunan',
         item_name: 'Viscose tunic dress',
         original_price: 999,
@@ -353,7 +353,7 @@ const New = [
     },
     {
         id: '0018',
-        image: '/assets/img/0018.jpg',
+        image: '../assets/img/0018.jpg',
         company: 'Sunan',
         item_name: 'Viscose tunic dress',
         original_price: 999,
@@ -368,7 +368,7 @@ const New = [
     },
     {
         id: '00015',
-        image: '/assets/img/015.jpg',
+        image: '../assets/img/015.jpg',
         company: 'Carlton London',
         item_name: '3-pack Mini Lip Glosses',
         original_price: 1045,
@@ -383,7 +383,7 @@ const New = [
     },
     {
         id: '016',
-        image: '/assets/img/17.jpg',
+        image: '../assets/img/17.jpg',
         company: 'CUKOO',
         item_name: 'Flounced chiffon dress',
         original_price: 2599,
@@ -398,7 +398,7 @@ const New = [
     },
     {
         id: '00017',
-        image: '/assets/img/017.jpg',
+        image: '/..assets/img/017.jpg',
         company: 'NUEVOSDAMAS',
         item_name: 'Eyeshadow Brush',
         original_price: 1599,
@@ -413,7 +413,7 @@ const New = [
     },
     {
         id: '0017',
-        image: '/assets/img/0017.jpg',
+        image: '/..assets/img/0017.jpg',
         company: 'NUEVOSDAMAS',
         item_name: 'Balloon-sleeved shirt dress',
         original_price: 1599,
@@ -432,7 +432,7 @@ const New = [
 const Women = [
     {
         id: '031',
-        image: '/assets/img/Women/1.jpg',
+        image: '../assets/img/Women/1.jpg',
         company: 'Carlton London',
         item_name: 'Off-the-shoulder Dress',
         original_price: 1045,
@@ -449,7 +449,7 @@ const Women = [
     },
     {
         id: '032',
-        image: '/assets/img/Women/2.jpg',
+        image: '../assets/img/Women/2.jpg',
         company: 'GRACE KARIN',
         item_name: 'Wide-leg Joggers',
         original_price: 2799,
@@ -464,7 +464,7 @@ const Women = [
     },
     {
         id: '033',
-        image: '/assets/img/Women/3.jpg',
+        image: '../assets/img/Women/3.jpg',
         company: 'GRACE KARIN',
         item_name: 'High-waist Dress Pants',
         original_price: 1699,
@@ -479,7 +479,7 @@ const Women = [
     },
     {
         id: '034',
-        image: '/assets/img/Women/4.jpg',
+        image: '../assets/img/Women/4.jpg',
         company: 'WDIRARA',
         item_name: `Oversized T-shirt`,
         original_price: 1599,
@@ -494,7 +494,7 @@ const Women = [
     },
     {
         id: '035',
-        image: '/assets/img/Women/5.jpg',
+        image: '../assets/img/Women/5.jpg',
         company: 'Sosomi',
         item_name: 'Fitted T-shirt',
         original_price: 999,
@@ -509,7 +509,7 @@ const Women = [
     },
     {
         id: '036',
-        image: '/assets/img/Women/6.jpg',
+        image: '../assets/img/Women/6.jpg',
         company: 'Lacozy',
         item_name: 'Crew-neck Sweatshirt',
         original_price: 999,
@@ -524,7 +524,7 @@ const Women = [
     },
     {
         id: '037',
-        image: '/assets/img/Women/7.jpg',
+        image: '../assets/img/Women/7.jpg',
         company: 'Carpie',
         item_name: `Oversized T-shirt`,
         original_price: 1899,
@@ -539,7 +539,7 @@ const Women = [
     },
     {
         id: '038',
-        image: '/assets/img/Women/8.jpg',
+        image: '../assets/img/Women/8.jpg',
         company: 'Belle Poque',
         item_name: `Canvas Cargo Pants`,
         original_price: 2999,
@@ -554,7 +554,7 @@ const Women = [
     },
     {
         id: '039',
-        image: '/assets/img/Women/9.jpg',
+        image: '../assets/img/Women/9.jpg',
         company: 'Arshiner',
         item_name: 'Oversized Printed T-shirt',
         original_price: 999,
@@ -569,7 +569,7 @@ const Women = [
     },
     {
         id: '040',
-        image: '/assets/img/Women/10.jpg',
+        image: '../assets/img/Women/10.jpg',
         company: 'Spankle',
         item_name: `Ribbed T-shirt`,
         original_price: 999,
@@ -584,7 +584,7 @@ const Women = [
     },
     {
         id: '041',
-        image: '/assets/img/Women/11.jpg',
+        image: '../assets/img/Women/11.jpg',
         company: 'Crêped',
         item_name: 'Crêped Viscose Skirt',
         original_price: 999,
@@ -599,7 +599,7 @@ const Women = [
     },
     {
         id: '042',
-        image: '/assets/img/Women/12.jpg',
+        image: '../assets/img/Women/12.jpg',
         company: 'Alancia',
         item_name: 'Oversized Boat-neck Top',
         original_price: 999,
@@ -614,7 +614,7 @@ const Women = [
     },
     {
         id: '043',
-        image: '/assets/img/Women/13.jpg',
+        image: '../assets/img/Women/13.jpg',
         company: 'ADIDAS',
         item_name: 'Wide High Jeans',
         original_price: 5499,
@@ -629,7 +629,7 @@ const Women = [
     },
     {
         id: '044',
-        image: '/assets/img/Women/14.jpg',
+        image: '../assets/img/Women/14.jpg',
         company: 'Silvia',
         item_name: 'A-Line Tie-Strap Dress',
         original_price: 5999,
@@ -644,7 +644,7 @@ const Women = [
     },
     {
         id: '045',
-        image: '/assets/img/Women/15.jpg',
+        image: '../assets/img/Women/15.jpg',
         company: 'Shaza',
         item_name: 'Wide-cut Pull-on Pants',
         original_price: 999,
@@ -659,7 +659,7 @@ const Women = [
     },
     {
         id: '046',
-        image: '/assets/img/Women/16.jpg',
+        image: '../assets/img/Women/16.jpg',
         company: 'Ariana',
         item_name: 'Off-the-shoulder Jersey Top',
         original_price: 2999,
@@ -674,7 +674,7 @@ const Women = [
     },
     {
         id: '047',
-        image: '/assets/img/Women/61.jpg',
+        image: '../assets/img/Women/61.jpg',
         company: 'ADIDAS',
         item_name: 'Indian Cricket ODI Jersey',
         original_price: 999,
@@ -689,7 +689,7 @@ const Women = [
     },
     {
         id: '048',
-        image: '/assets/img/Women/62.jpg',
+        image: '../assets/img/Women/62.jpg',
         company: 'ADIDAS',
         item_name: 'Indian Cricket ODI Jersey',
         original_price: 999,
@@ -704,7 +704,7 @@ const Women = [
     },
     {
         id: '049',
-        image: '/assets/img/Women/63.jpg',
+        image: '../assets/img/Women/63.jpg',
         company: 'ADIDAS',
         item_name: 'Indian Cricket ODI Jersey',
         original_price: 999,
@@ -719,7 +719,7 @@ const Women = [
     },
     {
         id: '050',
-        image: '/assets/img/Women/70.jpg',
+        image: '../assets/img/Women/70.jpg',
         company: 'ADIDAS',
         item_name: 'Indian Cricket ODI Jersey',
         original_price: 999,
@@ -751,7 +751,7 @@ const Women = [
 const Men = [
     {
         id: '101',
-        image: '/assets/img/Men/1.jpg',
+        image: '../assets/img/Men/1.jpg',
         company: 'Carlton London',
         item_name: 'Relaxed Fit Linen Resort Shirt',
         original_price: 1045,
@@ -768,7 +768,7 @@ const Men = [
     },
     {
         id: '102',
-        image: '/assets/img/Men/2.jpg',
+        image: '../assets/img/Men/2.jpg',
         company: 'GRACE KARIN',
         item_name: 'Loose Fit Shirt',
         original_price: 2599,
@@ -783,7 +783,7 @@ const Men = [
     },
     {
         id: '103',
-        image: '/assets/img/Men/3.jpg',
+        image: '../assets/img/Men/3.jpg',
         company: 'GRACE KARIN',
         item_name: 'GRACE KARIN Girls Summer Dress',
         original_price: 1599,
@@ -798,7 +798,7 @@ const Men = [
     },
     {
         id: '104',
-        image: '/assets/img/Men/4..jpg',
+        image: '../assets/img/Men/4..jpg',
         company: 'WDIRARA',
         item_name: `Slim Fit Linen Shirt`,
         original_price: 1599,
@@ -813,7 +813,7 @@ const Men = [
     },
     {
         id: '105',
-        image: '/assets/img/Men/5.jpg',
+        image: '../assets/img/Men/5.jpg',
         company: 'Sosomi',
         item_name: 'Regular Fit Utility Overshirt',
         original_price: 999,
@@ -828,7 +828,7 @@ const Men = [
     },
     {
         id: '106',
-        image: '/assets/img/Men/6.jpg',
+        image: '../assets/img/Men/6.jpg',
         company: 'Lacozy',
         item_name: 'Slim Fit Easy-iron Shirt',
         original_price: 999,
@@ -843,7 +843,7 @@ const Men = [
     },
     {
         id: '107',
-        image: '/assets/img/Men/7.jpg',
+        image: '../assets/img/Men/7.jpg',
         company: 'LYANER',
         item_name: `Relaxed Fit Linen Resort Shirt`,
         original_price: 999,
@@ -858,7 +858,7 @@ const Men = [
     },
     {
         id: '108',
-        image: '/assets/img/Men/8.jpg',
+        image: '../assets/img/Men/8.jpg',
         company: 'Belle Poque',
         item_name: `Regular Fit Linen-blend Shirt`,
         original_price: 999,
@@ -873,7 +873,7 @@ const Men = [
     },
     {
         id: '109',
-        image: '/assets/img/Men/9.jpg',
+        image: '../assets/img/Men/9.jpg',
         company: 'Belle Poque',
         item_name: `Regular Fit Cargo Pants`,
         original_price: 1999,
@@ -888,7 +888,7 @@ const Men = [
     },
     {
         id: '110',
-        image: '/assets/img/Men/10.jpg',
+        image: '../assets/img/Men/10.jpg',
         company: 'Poque Stuke',
         item_name: `Regular Fit Hoodie`,
         original_price: 999,
@@ -903,7 +903,7 @@ const Men = [
     },
     {
         id: '111',
-        image: '/assets/img/Men/11.jpg',
+        image: '../assets/img/Men/11.jpg',
         company: 'Strike',
         item_name: `Oversized Fit Cotton T-shirt`,
         original_price: 2985,
@@ -918,7 +918,7 @@ const Men = [
     },
     {
         id: '112',
-        image: '/assets/img/Men/12.jpg',
+        image: '../assets/img/Men/12.jpg',
         company: 'Parada',
         item_name: `Loose Cargo Denim Joggers`,
         original_price: 1500,
@@ -933,7 +933,7 @@ const Men = [
     },
     {
         id: '113',
-        image: '/assets/img/Men/13.jpg',
+        image: '../assets/img/Men/13.jpg',
         company: 'Heliaya',
         item_name: `Skinny Fit Jacket`,
         original_price: 5999,
@@ -948,7 +948,7 @@ const Men = [
     },
     {
         id: '114',
-        image: '/assets/img/Men/14.jpg',
+        image: '../assets/img/Men/14.jpg',
         company: 'Squite',
         item_name: `Loose Jeans`,
         original_price: 4599,
@@ -963,7 +963,7 @@ const Men = [
     },
     {
         id: '115',
-        image: '/assets/img/Men/15.jpg',
+        image: '../assets/img/Men/15.jpg',
         company: 'Squish',
         item_name: `Regular Fit Linen-blend Shirt`,
         original_price: 2999,
@@ -978,7 +978,7 @@ const Men = [
     },
     {
         id: '116',
-        image: '/assets/img/Men/16.jpg',
+        image: '../assets/img/Men/16.jpg',
         company: 'Alacia',
         item_name: `Regular Fit Textured Shirt`,
         original_price: 2399,
@@ -995,7 +995,7 @@ const Men = [
 const Beauty = [
     {
         id: '131',
-        image: '/assets/img/Beauty/1.jpg',
+        image: '../assets/img/Beauty/1.jpg',
         company: 'Carlton London',
         item_name: 'Relaxed Fit Linen Resort Shirt',
         original_price: 1045,
@@ -1012,7 +1012,7 @@ const Beauty = [
     },
     {
         id: '132',
-        image: '/assets/img/Beauty/2.jpg',
+        image: '../assets/img/Beauty/2.jpg',
         company: 'GRACE KARIN',
         item_name: 'Loose Fit Shirt',
         original_price: 2599,
@@ -1027,7 +1027,7 @@ const Beauty = [
     },
     {
         id: '133',
-        image: '/assets/img/Beauty/3.jpg',
+        image: '../assets/img/Beauty/3.jpg',
         company: 'GRACE KARIN',
         item_name: 'GRACE KARIN Girls Summer Dress',
         original_price: 1599,
@@ -1042,7 +1042,7 @@ const Beauty = [
     },
     {
         id: '134',
-        image: '/assets/img/Beauty/4.jpg',
+        image: '../assets/img/Beauty/4.jpg',
         company: 'WDIRARA',
         item_name: `Slim Fit Linen Shirt`,
         original_price: 1599,
@@ -1057,7 +1057,7 @@ const Beauty = [
     },
     {
         id: '135',
-        image: '/assets/img/Beauty/5.jpg',
+        image: '../assets/img/Beauty/5.jpg',
         company: 'Sosomi',
         item_name: 'Regular Fit Utility Overshirt',
         original_price: 999,
@@ -1072,7 +1072,7 @@ const Beauty = [
     },
     {
         id: '136',
-        image: '/assets/img/Beauty/6.jpg',
+        image: '../assets/img/Beauty/6.jpg',
         company: 'Lacozy',
         item_name: 'Slim Fit Easy-iron Shirt',
         original_price: 999,
@@ -1087,7 +1087,7 @@ const Beauty = [
     },
     {
         id: '137',
-        image: '/assets/img/Beauty/7.jpg',
+        image: '../assets/img/Beauty/7.jpg',
         company: 'LYANER',
         item_name: `Relaxed Fit Linen Resort Shirt`,
         original_price: 999,
@@ -1102,7 +1102,7 @@ const Beauty = [
     },
     {
         id: '138',
-        image: '/assets/img/Beauty/8.jpg',
+        image: '../assets/img/Beauty/8.jpg',
         company: 'Belle Poque',
         item_name: `Regular Fit Linen-blend Shirt`,
         original_price: 999,
@@ -1117,7 +1117,7 @@ const Beauty = [
     },
     {
         id: '139',
-        image: '/assets/img/Beauty/9.jpg',
+        image: '../assets/img/Beauty/9.jpg',
         company: 'Belle Poque',
         item_name: `Regular Fit Cargo Pants`,
         original_price: 1999,
@@ -1132,7 +1132,7 @@ const Beauty = [
     },
     {
         id: '130',
-        image: '/assets/img/Beauty/10.jpg',
+        image: '../assets/img/Beauty/10.jpg',
         company: 'Poque Stuke',
         item_name: `Regular Fit Hoodie`,
         original_price: 999,
@@ -1147,7 +1147,7 @@ const Beauty = [
     },
     {
         id: '141',
-        image: '/assets/img/Beauty/11.jpg',
+        image: '../assets/img/Beauty/11.jpg',
         company: 'Strike',
         item_name: `Soft Rattle`,
         original_price: 2985,
@@ -1162,7 +1162,7 @@ const Beauty = [
     },
     {
         id: '142',
-        image: '/assets/img/Beauty/12.jpg',
+        image: '../assets/img/Beauty/12.jpg',
         company: 'Parada',
         item_name: `Loose Cargo Denim Joggers`,
         original_price: 1500,
@@ -1179,7 +1179,7 @@ const Beauty = [
 const Home = [
     {
         id: '161',
-        image: '/assets/img/Home/1.jpg',
+        image: '../assets/img/Home/1.jpg',
         company: 'Carlton London',
         item_name: 'Metal Wire Wall Shelf',
         original_price: 1045,
@@ -1196,7 +1196,7 @@ const Home = [
     },
     {
         id: '162',
-        image: '/assets/img/Home/2.jpg',
+        image: '../assets/img/Home/2.jpg',
         company: 'GRACE KARIN',
         item_name: 'Bouclé Cushion Cover',
         original_price: 2599,
@@ -1211,7 +1211,7 @@ const Home = [
     },
     {
         id: '163',
-        image: '/assets/img/Home/3.jpg',
+        image: '../assets/img/Home/3.jpg',
         company: 'GRACE KARIN',
         item_name: '2-pack Airy Multiway Curtains',
         original_price: 1599,
@@ -1226,7 +1226,7 @@ const Home = [
     },
     {
         id: '164',
-        image: '/assets/img/Home/4.jpg',
+        image: '../assets/img/Home/4.jpg',
         company: 'WDIRARA',
         item_name: `Coffee Table`,
         original_price: 1599,
@@ -1241,7 +1241,7 @@ const Home = [
     },
     {
         id: '165',
-        image: '/assets/img/Home/5.jpg',
+        image: '../assets/img/Home/5.jpg',
         company: 'Sosomi',
         item_name: 'Stoneware Candlestick',
         original_price: 999,
@@ -1256,7 +1256,7 @@ const Home = [
     },
     {
         id: '166',
-        image: '/assets/img/Home/6.jpg',
+        image: '../assets/img/Home/6.jpg',
         company: 'Lacozy',
         item_name: 'Rectangular Tasseled Cushion',
         original_price: 999,
@@ -1271,7 +1271,7 @@ const Home = [
     },
     {
         id: '167',
-        image: '/assets/img/Home/7.jpg',
+        image: '../assets/img/Home/7.jpg',
         company: 'LYANER',
         item_name: `2-pack Linen-blend Curtain Panels`,
         original_price: 999,
@@ -1286,7 +1286,7 @@ const Home = [
     },
     {
         id: '168',
-        image: '/assets/img/Home/8.jpg',
+        image: '../assets/img/Home/8.jpg',
         company: 'Belle Poque',
         item_name: `Muslin Queen Duvet Cover Set`,
         original_price: 999,
@@ -1301,7 +1301,7 @@ const Home = [
     },
     {
         id: '169',
-        image: '/assets/img/Home/9.jpg',
+        image: '../assets/img/Home/9.jpg',
         company: 'Belle Poque',
         item_name: `Toiletry Bag`,
         original_price: 1999,
