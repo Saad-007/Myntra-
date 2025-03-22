@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let bagContainer = document.querySelector(".bag-items-container");
     let bagSummary = document.querySelector(".bag-summary");
 
+    let bagCountElement=document.querySelector(".bag-items");
+    bagCountElement.textContent=bagItems.length || "0";
+
     console.log("bag-items-container:", bagContainer);
     console.log("bag-summary:", bagSummary);
 
@@ -54,15 +57,12 @@ function loadBagItemObjects() {
 // Display all bag items
 function displayBagItems() {
     let containerElement = document.querySelector('.bag-items-container');
+    let bagCountElement =document.querySelector(".bag-items");
+   
 
-    if (!containerElement) {
-        console.error("Error: Element with class 'bag-items-container' not found. Skipping displayBagItems().");
-        return;
-    }
-
-    if (!bagItemObjects || bagItemObjects.length === 0) {
-        console.warn("Warning: No items found in the bag.");
+      if (!bagItemObjects || bagItemObjects.length === 0) {
         containerElement.innerHTML = "<p>Your bag is empty.</p>";
+        bagCountElement.textContent = "0"; // Set bag count to 0
         return;
     }
 
@@ -72,7 +72,9 @@ function displayBagItems() {
     });
 
     containerElement.innerHTML = innerHTML;
+    bagCountElement.textContent = bagItemObjects.length; // Update count based on items
 }
+
 
 // Generate HTML for each bag item
 function generateItemHTML(item) {
