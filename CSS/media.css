@@ -3,13 +3,19 @@
 @media only screen and (width: 425px) {
   body > main > div.woitems-container{
     width: 100%;
-        margin: 120px -2%;
+        margin: -13px -2%;
     }
     .Wishlist {
       position: absolute;
       margin-top: -35px;
       margin-left: 83px;
       color: white;
+  }
+  body > main > div.woitems-container > div.Men-heading1{
+    margin-left: -239px;
+    margin-top: -4px;
+    position: absolute;
+
   }
     body > main > div.woitems-container > div.newitem-container {
     width: 90px;
@@ -87,6 +93,10 @@
     font-size: 20px;
         margin-left: 21px;
     }
+    body > main > div.woitems-container > div.Men-heading1 > h3{
+      font-size: 20px;
+      margin-left: 22px;
+    }
   body > header > div.action_bar > div{
     margin-top: 13px;
     margin-left: -121px;
@@ -94,7 +104,7 @@
   body > header > div.action_bar > div > span.material-symbols-outlined.action_icon{
     font-size: 30px;
     margin-left: 212px;
-    margin-top: 9px;
+    margin-top: -4px;
   }
   body > header > div.action_bar > div > span.action_name{
     font-size: 13px;
@@ -103,21 +113,26 @@
   body > header > div.action_bar > a:nth-child(3) > span.bag-items{
     visibility: visible;
         margin-left: 20px;
-        margin-top: 11px;
+        margin-top: 0px;
+    }
+    body > header > div.action_bar > a:nth-child(2) > span.wish-items{
+    visibility: visible;
+        margin-left: 0px;
+        margin-top: 0px;
     }
     body > header > div.action_bar > a:nth-child(2) > span.Wishlist-items{
       margin-top: 10px;
     }
   body > header > div.action_bar > a:nth-child(2) > span.material-symbols-outlined.action_icon{
     font-size: 25px;
-    margin-top: 25px;
+    margin-top: 11px;
   }
   body > header > div.action_bar > a:nth-child(2) > span.action_name{
     font-size: 14px;
   }
   body > header > div.action_bar > a:nth-child(3) > span.material-symbols-outlined.action_icon{
     font-size: 26px;
-    margin-top: 24px;
+    margin-top: 11px;
     color: black;
     margin-left: 25px;
   }
@@ -290,7 +305,7 @@ html body footer div.copyright{
     margin: 2px -104px
   }
   body > header{
-    width: 118%;
+    width: 122%;
   }
   .myntra_home {
     height: 37px; /* Adjust height as needed */
@@ -324,13 +339,13 @@ html body footer div.copyright{
     padding: 10px;
   }
   body > header > div.action_bar > div{
-    margin-top: 14px;
+    margin-top: 7px;
     margin-left: -4px;
   }
   body > header > div.action_bar > div > span.material-symbols-outlined.action_icon{
     font-size: 24px;
     margin-left: 166px;
-    margin-top: 13px;
+    margin-top: 10px;
   }
   body > header > div.action_bar > div > span.action_name{
     font-size: 10px;
@@ -338,12 +353,18 @@ html body footer div.copyright{
   }
   body > header > div.action_bar > a:nth-child(2) > span.material-symbols-outlined.action_icon{
     font-size: 23px;
-    margin-top: 13px;
-    margin-left: -111px;
+    margin-top: 0px;
+    margin-left: -93px;
   }
   body > header > div.action_bar > a:nth-child(3) > span.bag-items{
     margin-left: -60px;
-  }
+    margin-top: 0px; 
+
+}
+body > header > div.action_bar > a:nth-child(2) > span.wish-items{
+  margin-left: -98px;
+  margin-top: 0px; 
+ }
   body > header > div.action_bar > a:nth-child(2) > span.action_name{
     font-size: 10px;
     margin-left: -111px;
@@ -353,7 +374,7 @@ html body footer div.copyright{
   }
   body > header > div.action_bar > a:nth-child(3) > span.material-symbols-outlined.action_icon{
     font-size: 23px;
-    margin-top: 26px;
+    margin-top: 15px;
     color: black;
     margin-left: -42px;
   }
@@ -503,19 +524,21 @@ html body footer div.copyright{
   }
   body > main > div.woitems-container > div.Men-heading1> h3{
     font-size: 1.2rem;
-    margin: 16px 13px;
+    margin: 4px 6px;
+
   }
   body > main > div.woitems-container> div.heading{
     margin-left: -148px;
     margin-top: -9px;
   }
   body > main > div.woitems-container > div.heading> h3{
-    margin-top: 21px;
-        font-size: 1.2rem;
+    margin-top: 4px;
+    margin-left: 6px;        
+    font-size: 1.2rem;
   }
   body > main > .woitems-container{
     width: 83%;
-        margin: -19px 28%;
+        margin: -19px 32%;
   }
   body > main > div.woitems-container > div:nth-child(17){
     display: none;
@@ -572,11 +595,11 @@ html body footer{
   margin-top: 81px;
 }
 html body footer div.footer_container{
-  width: 99%;
-  margin-left:  75px; 
+  width: 100%;
+  margin-left:  78px; 
 }
 html body footer hr{
-  width: 119%;
+  width: 123%;
 }
 html body footer div.footer_container div.footer_column h3{
   font-size: 10px;

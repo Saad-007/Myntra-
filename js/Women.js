@@ -28,15 +28,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function onLoad() {
     let bagItemsStr = localStorage.getItem('bagItems');
+    let wishItemsStr = localStorage.getItem('wishItems');
+
     bagItems = bagItemsStr ? JSON.parse(bagItemsStr) : [];
+    wishItems = wishItemsStr ? JSON.parse(wishItemsStr) : [];
+
     displayItemsOnHomepage();
     displayBagIcon();
+    displaywhisIcon();
 }
 function addToBag(itemId) {
     itemId = itemId.toString(); // Ensure itemId is a string
     bagItems.push(itemId);
     localStorage.setItem('bagItems', JSON.stringify(bagItems));
     displayBagIcon();
+}
+function addTowish(itemId) {
+    itemId = itemId.toString(); // Ensure itemId is a string
+    wishItems.push(itemId);
+    localStorage.setItem('wishItems', JSON.stringify(wishItems));
+    displaywhisIcon();
 }
 
 function displayBagIcon() {
@@ -49,13 +60,33 @@ function displayBagIcon() {
         bagItemCount.style.visibility = 'hidden';
     }
 }
+function displaywhisIcon(){
+    
+    let wishItemCount = document.querySelector('.wish-items');
+    
+    if (wishItems.length > 0) {
+        wishItemCount.style.visibility = 'visible';
+        wishItemCount.innerText = wishItems.length;
+    } else {
+        wishItemCount.style.visibility = 'hidden';
+    }
+}
 
 function displayItemsOnHomepage() {
-    // let itemContainerElement = document.querySelector('.items-container');
     let newItemContainerElement = document.querySelector('.woitems-container');
+
     if (!newItemContainerElement) {
+        console.warn("❌ Warning: '.woitems-container' not found. Stopping execution.");
         return;
     }
+
+    if (!Array.isArray(Women) || Women.length === 0) {
+        console.warn("❌ Warning: 'Men' array is empty or undefined.");
+        newItemContainerElement.innerHTML = "<p>No products found.</p>";
+        return;
+    }
+
+    console.log("✅ Men array:", Women);
     // if (!itemContainerElement || !newItemContainerElement) {
     //     return;
     // }

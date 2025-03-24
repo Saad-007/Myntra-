@@ -1,85 +1,93 @@
-// Define convenience fee and global variables 
+// ✅ Define convenience fee
 const CONVENIENCE_FEES = 99;
 
-if (typeof bagItems === "undefined") {
-  bagItems = JSON.parse(localStorage.getItem('bagItems')) || [];
-}
+// ✅ Retrieve bagItems from localStorage without redeclaration
+window.bagItems = window.bagItems || JSON.parse(localStorage.getItem("bagItems")) || [];
 
+// ✅ Ensure all item arrays exist before using them
+window.items = window.items || [];
+window.New = window.New || [];
+window.Women = window.Women || [];
+window.Men = window.Men || [];
+window.Beauty = window.Beauty || [];
+window.Home = window.Home || [];
 
-
+// ✅ Merge all item categories into a single list
 const allItems = [...items, ...New, ...Women, ...Men, ...Beauty, ...Home];
 
-// Wait for DOM to be fully loaded before running
+console.log("🛒 All Items:", allItems);
+console.log("👜 Bag Items (IDs):", window.bagItems);
+
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("DOM fully loaded");
-
-    let bagContainer = document.querySelector(".bag-items-container");
-    let bagSummary = document.querySelector(".bag-summary");
-
-    let bagCountElement=document.querySelector(".bag-items");
-    bagCountElement.textContent=bagItems.length || "0";
-
-    console.log("bag-items-container:", bagContainer);
-    console.log("bag-summary:", bagSummary);
-
-    if (!bagContainer || !bagSummary) {
-        console.error("Error: Required elements '.bag-items-container' or '.bag-summary' not found.");
-        return;
-    }
-
+    console.log("✅ DOM fully loaded");
+    ensureBagSummaryExists();
     onLoad();
 });
 
+// ✅ Ensure .bag-summary exists before calling displayBagSummary
+function ensureBagSummaryExists() {
+    const checkBagSummary = setInterval(() => {
+        const bagSummary = document.querySelector('.bag-summary');
+        if (bagSummary) {
+            clearInterval(checkBagSummary);
+            displayBagSummary();
+        }
+    }, 500);
+}
 
-
-
-// Main function to load bag items
+// ✅ Main function to load bag items
 function onLoad() {
     loadBagItemObjects();
     displayBagItems();
     displayBagSummary();
 }
 
-// Load items from bag and map them to their full details
+// ✅ Load items from bag and map them to their full details
 function loadBagItemObjects() {
-    if (!Array.isArray(bagItems)) {
-        console.error("Error: bagItems is not an array.");
-        bagItems = [];
+    if (!Array.isArray(window.bagItems)) {
+        console.error("❌ bagItems is not an array.");
+        window.bagItems = [];
     }
 
-    bagItemObjects = bagItems.map(itemId => {
-        return allItems.find(item => item.id == itemId) || null;
-    }).filter(item => item !== null);
+    console.log("🔎 Matching bag items...");
 
-    console.log("Loaded Bag Items:", bagItemObjects);
+    window.bagItemObjects = window.bagItems
+        .map(itemId => {
+            let foundItem = allItems.find(item => item.id == itemId);
+            if (!foundItem) {
+                console.warn(`⚠️ Item ID ${itemId} not found in allItems`);
+            }
+            return foundItem || null;
+        })
+        .filter(item => item !== null);
+
+    console.log("✅ Loaded Bag Item Objects:", window.bagItemObjects);
 }
 
-// Display all bag items
+// ✅ Display all bag items
 function displayBagItems() {
-    let containerElement = document.querySelector('.bag-items-container');
-    let bagCountElement =document.querySelector(".bag-items");
-   
+    let containerElement = document.querySelector(".bag-items-container");
+    let bagCountElement = document.querySelector(".bag-items");
 
-      if (!bagItemObjects || bagItemObjects.length === 0) {
-        containerElement.innerHTML = "<p>Your bag is empty.</p>";
-        bagCountElement.textContent = "0"; // Set bag count to 0
+    if (!containerElement || !bagCountElement) {
+        console.error("❌ Error: '.bag-items-container' or '.bag-items' not found.");
         return;
     }
 
-    let innerHTML = '';
-    bagItemObjects.forEach(bagItem => {
-        innerHTML += generateItemHTML(bagItem);
-    });
+    if (!window.bagItemObjects || window.bagItemObjects.length === 0) {
+        containerElement.innerHTML = "<p>Your bag is empty.</p>";
+        bagCountElement.textContent = "0";
+        return;
+    }
+
+    let innerHTML = window.bagItemObjects.map(generateItemHTML).join("");
 
     containerElement.innerHTML = innerHTML;
-    bagCountElement.textContent = bagItemObjects.length; // Update count based on items
+    bagCountElement.textContent = window.bagItemObjects.length;
 }
 
-
-// Generate HTML for each bag item
+// ✅ Generate HTML for each bag item
 function generateItemHTML(item) {
-    console.log(`Generating HTML for item ID: ${item.id}`);
-
     return `<div class="bag-item-container">
         <div class="item-left-part">
             <img class="bag-item-img" src="${item.image}" alt="${item.item_name}">
@@ -93,53 +101,43 @@ function generateItemHTML(item) {
                 <span class="discount-percentage">(${item.discount_percentage}% OFF)</span>
             </div>
             <div class="return-period">
-                <span class="return-period-days">${item.return_period} days</span> return available
+                <span class="return-period-days">${item.return_period || "No"}</span> days return available
             </div>
             <div class="delivery-details">
-                Delivery by <span class="delivery-details-days">${item.delivery_date}</span>
+                Delivery by <span class="delivery-details-days">${item.delivery_date || "N/A"}</span>
             </div>
         </div>
         <div class="remove-from-cart" onclick="removeFromBag('${item.id}')">X</div>
     </div>`;
 }
 
-// Remove item from bag
+// ✅ Remove item from bag
 function removeFromBag(itemId) {
-    console.log('Removing item with ID:', itemId);
-    console.log('Before removal, bagItems:', bagItems);
-
-    itemId = itemId.toString();
-    
-    bagItems = bagItems.filter(bagItemId => bagItemId !== itemId);
-    console.log('After removal, bagItems:', bagItems);
-
-    localStorage.setItem('bagItems', JSON.stringify(bagItems));
+    window.bagItems = window.bagItems.filter(bagItemId => String(bagItemId) !== String(itemId));
+    localStorage.setItem("bagItems", JSON.stringify(window.bagItems));
     loadBagItemObjects();
     displayBagItems();
     displayBagSummary();
 }
 
-// Display bag summary
+// ✅ Display bag summary
 function displayBagSummary() {
-    let bagSummaryElement = document.querySelector('.bag-summary');
-
-    if (!bagSummaryElement) {
-        console.error("Error: Element with class 'bag-summary' not found. Skipping displayBagSummary().");
+    const bagSummary = document.querySelector('.bag-summary');
+    if (!bagSummary) {
+        console.error("❌ Error: '.bag-summary' element not found.");
         return;
     }
-
-    let totalItems = bagItemObjects.length;
+    
+    let totalItems = window.bagItemObjects.length;
     let totalMRP = 0;
     let totalDiscount = 0;
-
-    bagItemObjects.forEach(bagItem => {
+    window.bagItemObjects.forEach(bagItem => {
         totalMRP += bagItem.original_price;
         totalDiscount += bagItem.original_price - bagItem.current_price;
     });
-
     let finalPayment = totalMRP - totalDiscount + CONVENIENCE_FEES;
 
-    bagSummaryElement.innerHTML = `
+    bagSummary.innerHTML = `
         <div class="bag-details-container">
             <div class="price-header">PRICE DETAILS (${totalItems} Items) </div>
             <div class="price-item">

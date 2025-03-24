@@ -1,4 +1,5 @@
 let bagItems;
+let wishItems;
 onLoad();
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -29,15 +30,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function onLoad() {
     let bagItemsStr = localStorage.getItem('bagItems');
+    let wishItemsStr = localStorage.getItem('wishItems');
+
     bagItems = bagItemsStr ? JSON.parse(bagItemsStr) : [];
+    wishItems = wishItemsStr ? JSON.parse(wishItemsStr) : [];
+
     displayItemsOnHomepage();
     displayBagIcon();
+    displaywhisIcon();
 }
 function addToBag(itemId) {
     itemId = itemId.toString(); // Ensure itemId is a string
     bagItems.push(itemId);
     localStorage.setItem('bagItems', JSON.stringify(bagItems));
     displayBagIcon();
+}
+function addTowish(itemId) {
+    itemId = itemId.toString(); // Ensure itemId is a string
+    wishItems.push(itemId);
+    localStorage.setItem('wishItems', JSON.stringify(wishItems));
+    displaywhisIcon();
 }
 
 function displayBagIcon() {
@@ -50,61 +62,61 @@ function displayBagIcon() {
         bagItemCount.style.visibility = 'hidden';
     }
 }
+function displaywhisIcon(){
+    
+    let wishItemCount = document.querySelector('.wish-items');
+    
+    if (wishItems.length > 0) {
+        wishItemCount.style.visibility = 'visible';
+        wishItemCount.innerText = wishItems.length;
+    } else {
+        wishItemCount.style.visibility = 'hidden';
+    }
+}
 
 function displayItemsOnHomepage() {
-    // let itemContainerElement = document.querySelector('.items-container');
     let newItemContainerElement = document.querySelector('.woitems-container');
+
     if (!newItemContainerElement) {
+        console.warn("❌ Warning: '.woitems-container' not found. Stopping execution.");
         return;
     }
-    // if (!itemContainerElement || !newItemContainerElement) {
-    //     return;
-    // }
-    
 
-    // let newItemsHTML = '<div class="heading"><h3 class="New">New Items</h3></div>';
+    if (!Array.isArray(Men) || Men.length === 0) {
+        console.warn("❌ Warning: 'Men' array is empty or undefined.");
+        newItemContainerElement.innerHTML = "<p>No products found.</p>";
+        return;
+    }
+
+    console.log("✅ Men array:", Men);
+
     let trendingItemsHTML = '<div class="heading"><h3 class="trending">Men Products</h3></div>';
 
-    // // Iterate over the items array
-    // items.forEach(item => {
-    //     newItemsHTML += `
-    //     <div class="item-container">
-    //         <img class="item-img" src="${item.image}" alt="${item.item_name}">
-    //         <div class="rating">
-    //             ${item.rating.stars}⭐ | ${item.rating.count}
-    //         </div>
-    //         <div class="company-name">${item.company}</div>
-    //         <div class="item-name">${item.item_name}</div>
-    //         <div class="price">
-    //             <span class="current-price">Rs ${item.current_price}</span>
-    //             <span class="original-price">Rs ${item.original_price}</span>
-    //             <span class="discount">(${item.discount_percentage}% OFF)</span>
-    //         </div>
-    //         <button class="btn-add-bag" onclick="addToBag('${item.id}')">Add to Bag</button>
-    //     </div>
-    //     `;
-    // });
-    // itemContainerElement.innerHTML = newItemsHTML;
-
-    // Iterate over the New array (assuming New is another array of items)
     Men.forEach(isitem => {
+        if (!isitem.image || !isitem.id) {
+            console.warn("❌ Skipping item due to missing properties:", isitem);
+            return;
+        }
+
         trendingItemsHTML += `
         <div class="newitem-container">
             <img class="item-img" src="${isitem.image}" alt="${isitem.item_name}">
             <div class="rating">
-            <div class="Wishlist"><span class="material-symbols-outlined action_icon"onclick="addToWishlist('${isitem.id}')">favorite</span></div>
-                ${isitem.rating.stars}⭐ | ${isitem.rating.count}
+                <div class="Wishlist">
+                    <span class="material-symbols-outlined action_icon" onclick="addTowish('${isitem.id}')">favorite</span>
+                </div>
+                ${isitem.rating?.stars ?? "N/A"}⭐ | ${isitem.rating?.count ?? 0}
             </div>
-            <div class="company-name">${isitem.company}</div>
-            <div class="item-name">${isitem.item_name}</div>
+            <div class="company-name">${isitem.company ?? "Unknown Brand"}</div>
+            <div class="item-name">${isitem.item_name ?? "No Name"}</div>
             <div class="price">
-                <span class="current-price">Rs ${isitem.current_price}</span>
-                <span class="original-price">Rs ${isitem.original_price}</span>
-                <span class="discount">(${isitem.discount_percentage}% OFF)</span>
+                <span class="current-price">Rs ${isitem.current_price ?? "0"}</span>
+                <span class="original-price">Rs ${isitem.original_price ?? "0"}</span>
+                <span class="discount">(${isitem.discount_percentage ?? 0}% OFF)</span>
             </div>
             <button class="btn-add-bag" onclick="addToBag('${isitem.id}')">Add to Bag</button>
-        </div>
-        `;
+        </div>`;
     });
+
     newItemContainerElement.innerHTML = trendingItemsHTML;
 }
