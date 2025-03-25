@@ -5,10 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("✅ DOM fully loaded");
 
     // Wait for .bag-items and .wish-items to appear
-    waitForElement(".bag-items", (bagItemCount) => {
-        waitForElement(".wish-items", (wishItemCount) => {
+    waitForElement(".bag-items", () => {
+        waitForElement(".wish-items", () => {
             console.log("✅ .bag-items & .wish-items found in the DOM!");
-
             onLoad();
             setupNavMenu();
         });
@@ -84,20 +83,42 @@ function displayItemsOnHomepage() {
     let trendingItemsHTML = '<div class="heading1"><h3 class="trending">New Arrivals</h3></div>';
 
     items.forEach(item => {
-        newItemsHTML += generateItemHTML(item);
+        newItemsHTML += generateItemHTMLForItemsContainer(item);
     });
     itemContainerElement.innerHTML = newItemsHTML;
 
     New.forEach(isitem => {
-        trendingItemsHTML += generateItemHTML(isitem);
+        trendingItemsHTML += generateItemHTMLForNewItemsContainer(isitem);
     });
     newItemContainerElement.innerHTML = trendingItemsHTML;
 }
 
-// 🖼️ Generate Item HTML
-function generateItemHTML(item) {
+// 🖼️ Generate Item HTML for .items-container
+function generateItemHTMLForItemsContainer(item) {
     return `
     <div class="item-container">
+        <img class="item-img" src="${item.image}" alt="${item.item_name}">
+        <div class="rating">
+            <div class="Wishlist">
+                <span class="material-symbols-outlined action_icon" onclick="addToWish('${item.id}')">favorite</span>
+            </div>
+            ${item.rating.stars}⭐ | ${item.rating.count}
+        </div>
+        <div class="company-name">${item.company}</div>
+        <div class="item-name">${item.item_name}</div>
+        <div class="price">
+            <span class="current-price">Rs ${item.current_price}</span>
+            <span class="original-price">Rs ${item.original_price}</span>
+            <span class="discount">(${item.discount_percentage}% OFF)</span>
+        </div>
+        <button class="btn-add-bag" onclick="addToBag('${item.id}')">Add to Bag</button>
+    </div>`;
+}
+
+// 🖼️ Generate Item HTML for .newitems-container
+function generateItemHTMLForNewItemsContainer(item) {
+    return `
+    <div class="newitem-container">
         <img class="item-img" src="${item.image}" alt="${item.item_name}">
         <div class="rating">
             <div class="Wishlist">

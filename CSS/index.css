@@ -277,7 +277,7 @@ header {
 
 .copyright {
     color: #94969f;
-    text-align: end;
+    text-align: center;
     padding: 15px;
 }
 .items-container{
@@ -361,6 +361,11 @@ header {
     margin-left: 5px;
     font-size: 12px;
 }
+
+body > main > div.items-container > div> div.rating > div > span{
+    margin: 8px 2px;
+}
+
 .btn-add-bag{
     font-size: 18px;
     color: white;
@@ -383,7 +388,7 @@ header {
     margin: 30px 29px;
 }
 .heading1,.Men-heading1,.Women-heading1 {
-    margin-left: -849px;
+    margin-left: -778px;
     margin-top: -74px;
     position: absolute;
 }

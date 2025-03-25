@@ -254,7 +254,18 @@
     font-size: 8px;
     margin-left: -1px;
   }
-
+  body > main > div.items-container > div> div.rating > div > span{
+    font-size: 19px;
+    margin: 6px 26px;
+  }
+  body > main > div.woitems-container > div> div.rating > div > span{
+    font-size: 19px;
+    margin: 6px 26px;
+  }
+  body > main > div.newitems-container > div> div.rating > div > span{
+    font-size: 19px;
+    margin: 6px 26px;
+  }
   body > main > div.newitems-container > div.newitem-container > div.price > span.discount{
     font-size: 8px;
     margin-left: -1px;
@@ -345,11 +356,19 @@ html body footer div.copyright{
   body > header > div.action_bar > div > span.material-symbols-outlined.action_icon{
     font-size: 24px;
     margin-left: 166px;
-    margin-top: 10px;
+    margin-top: 8px;
   }
   body > header > div.action_bar > div > span.action_name{
     font-size: 10px;
     margin-left: 140px;
+  }
+  body > main > div.items-container > div> div.rating > div > span{
+    font-size: 18px;
+    margin: 6px 7px;
+  }
+  body > main > div.newitems-container > div> div.rating > div > span{
+    font-size: 18px;
+    margin: 6px 7px;
   }
   body > header > div.action_bar > a:nth-child(2) > span.material-symbols-outlined.action_icon{
     font-size: 23px;
@@ -404,16 +423,16 @@ body > header > div.action_bar > a:nth-child(2) > span.wish-items{
   /* For products Body */
 
   body > main > div.items-container> div.heading{
-    margin-left: -166px;
+    margin-left: -182px;
     margin-top: -9px;
   }
   body > main > div.items-container > div.heading > h3{
     font-size: 1.3rem;
-    margin-left: 20px;
+    margin-left: 39px;
   }
   body > main > div.items-container{
     width: 85%;
-    margin: -19px 30%;
+    margin: -19px 32%;
   }
   
   body > main > div.items-container > div.item-container{
@@ -468,11 +487,11 @@ body > header > div.action_bar > a:nth-child(2) > span.wish-items{
   }
   body > main > div.newitems-container > div.heading1 > h3{
     font-size: 1.3rem;
-    margin-left: 20px;
+    margin-left: 25px;
   }
   body > main > div.newitems-container{
     width: 85%;
-    margin: 108px 30%;
+    margin: 108px 32%;
   }
   
   body > main > div.newitems-container > div.newitem-container{
@@ -684,7 +703,7 @@ html body footer div.copyright{
     margin-top: -32px; 
   }
   body > main > div.woitems-container > div.Men-heading1 > h3{
-    margin-left: -46px;
+    margin-left: -115px;
   }
   
   /* for products */
@@ -695,6 +714,18 @@ html body footer div.copyright{
   body > main > div:nth-child(1){
     width: 82%;
     margin-left: 5%;
+  }
+  body > main > div.items-container > div> div.rating > div > span{
+    font-size: 25px;
+    margin: 9px 55px;
+  }
+  body > main > div.woitems-container > div> div.rating > div > span{
+    font-size: 25px;
+    margin: 9px 55px;
+  }
+  body > main > div.newitems-container > div> div.rating > div > span{
+    font-size: 25px;
+    margin: 9px 55px;
   }
   body > main > div.woitems-container > div.heading > h3{
     margin-right: -545px;
@@ -772,6 +803,13 @@ html body footer div.copyright{
     margin-left: -103px
   }  */
 }
+/* @media only screen and (min-width: 1024px) and (max-width: 1024px) {
+  body > main > div.woitems-container > div.Men-heading1 > h3 {
+      margin-left: 11px;
+  }
+} */
+
+
 /* Hide menu links on small screens */
 @media only screen and (max-width: 700px) {
   .nav-links {
@@ -810,5 +848,3 @@ html body footer div.copyright{
 
 } */
 }
-
-
