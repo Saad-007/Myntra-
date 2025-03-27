@@ -1,800 +1,650 @@
-
-
-@media only screen and (width: 425px) {
-  body > main > div.woitems-container{
-    width: 100%;
-        margin: -13px -2%;
-    }
-    .Wishlist {
-      position: absolute;
-      margin-top: -35px;
-      margin-left: 83px;
-      color: white;
-  }
-  body > main > div.woitems-container > div.Men-heading1{
-    margin-left: -239px;
-    margin-top: -4px;
-    position: absolute;
-
-  }
-    body > main > div.woitems-container > div.newitem-container {
-    width: 90px;
-        height: 260px;
-        margin: 52px 11px;
-    } 
-    body > main > div.woitems-container > div > div.price > span.current-price{
-      font-size: 10px;
-          color: #282c3f;
-          font-weight: 800;
-      }
-      
-      
-      body > main > div.woitems-container  div > div.price > span.original-price{
-      text-decoration: line-through;
-          color: #7e818c;
-          font-weight: 400;
-          margin-left:0px;
-          font-size: 9px;
-      }
-      
-      body > main > div.woitems-container > div> div.price > span.discount{
-      color: #ff905a;
-          font-weight: 700;
-          margin-left: -2px;
-          font-size: 6px;
-      }
-      body > main > div.woitems-container > div > button{
-        font-size: 13px;
-      }
-      body > main > div.woitems-container > div.heading > h3{
-        margin-left: 687px;
-    font-size: 2.1rem;
-      }
-}
-
-@media only screen and (width <= 479px) {
-
-  body > header{
-    width: 100%;
-  }
-  .myntra_home {
-    height: 37px; /* Adjust height as needed */
-    width: 37px;  /* Ensure width adjusts proportionally */
-    display: none;
-  }
-  .nav_bar a{
-    display: none;
-  }
-   
-  .search_bar{
-    margin-left: -119%;
-    width: 17%;
-  }
-  .nav-toggle{
-    position: absolute;
-    margin-left: 28px;
-  }
-  .search_icon{
-    padding: 7px;
-  }
-  body > header > div.search_bar > input{
-    font-size: 9px;
-        width: 147px;
-        height: 27px;
-        position: absolute;
-        margin: 2px 38px;
-  }
-  body > header > div.search_bar > span{
-    font-size: 19px;
-    height: 7px;
-    padding: 10px;
-  }
-  .NEW{
-    font-size: 20px;
-        margin-left: 21px;
-    }
-    body > main > div.woitems-container > div.Men-heading1 > h3{
-      font-size: 20px;
-      margin-left: 22px;
-    }
-  body > header > div.action_bar > div{
-    margin-top: 13px;
-    margin-left: -121px;
-  }
-  body > header > div.action_bar > div > span.material-symbols-outlined.action_icon{
-    font-size: 30px;
-    margin-left: 212px;
-    margin-top: -4px;
-  }
-  body > header > div.action_bar > div > span.action_name{
-    font-size: 13px;
-    margin-left: 196px;
-  }
-  body > header > div.action_bar > a:nth-child(3) > span.bag-items{
-    visibility: visible;
-        margin-left: 20px;
-        margin-top: 0px;
-    }
-    body > header > div.action_bar > a:nth-child(2) > span.wish-items{
-    visibility: visible;
-        margin-left: 0px;
-        margin-top: 0px;
-    }
-    body > header > div.action_bar > a:nth-child(2) > span.Wishlist-items{
-      margin-top: 10px;
-    }
-  body > header > div.action_bar > a:nth-child(2) > span.material-symbols-outlined.action_icon{
-    font-size: 25px;
-    margin-top: 11px;
-  }
-  body > header > div.action_bar > a:nth-child(2) > span.action_name{
-    font-size: 14px;
-  }
-  body > header > div.action_bar > a:nth-child(3) > span.material-symbols-outlined.action_icon{
-    font-size: 26px;
-    margin-top: 11px;
-    color: black;
-    margin-left: 25px;
-  }
-  body > header > div.action_bar > a:nth-child(3) > span.action_name{
-    font-size: 13px;
-    color: black;
-    margin-left: -147px;
-  }
-  body > header > div.action_bar > a:nth-child(2){
-    margin-left: -85%;
-    
-  }
-  .action_bar{
-    margin-left: -110px;
-  }
-  .action_container{
-    margin-left: -73px;
-  }
-  body > header > div:nth-child(4) > a > img{
-    height: 30px;
-    width: 37px;
-    margin-left: -53px;
-  }
-
-  /* For products Body */
-
-  body > main > div.items-container > div.heading{
-    margin-left: -138px;
-    margin-top: -14px;
-  }
-  body > main > div.items-container > div.heading > h3{
-    font-size: 1.9rem;
-  }
-  body > main > div.items-container{
-    width: 83%;
-    margin: -20px 7%;
-  }
-  body > main > div.items-container > div.item-container{
-    width: 86px;
-    height: 209px;
-    margin: 52px 15px;
-  }
-  body > main > div.items-container > div.item-container > div.rating{
-    font-size: 9px;
-  }
-  body > main > div.items-container > div.item-container > div.rating > div.Wishlist{
-    margin-top: -28px;
-    margin-left: 60px;
-  }
-  body > main > div.items-container > div.item-container > div.company-name{
-    font-size: 13px;
-    margin-top: 6px;
-  }
-  body > main > div.items-container > div.item-container > div.item-name{
-    font-size: 11px;
-  }
-  body > main > div.items-container > div.item-container > div.price > span.current-price{
-    font-size: 9px;
-  }
-
-  body > main > div.items-container > div.item-container > div.price > span.original-price{
-    font-size: 8px;
-    margin-left: -1px;
-  }
-
-  body > main > div.items-container > div.item-container > div.price > span.discount{
-    font-size: 8px;
-    margin-left: -1px;
-    text-wrap: balance;
-  }
-  body > main > div.items-container > div.item-container > button.btn-add-bag{
-    font-size: 13px;
-    width: 84px;
-    padding: 1px 1px;
-    margin-top: 5px;
-  }
-  body > main > div.items-container > div.item-container > div.price{
-    margin-top: 6px;
-  }
-  body > main > div.newitems-container > div.heading1{
-    margin-left: -138px;
-    margin-top: -36px;
-  }
-  body > footer > div.copyright{
-    align-items: center;
-  }
-  body > main > div.newitems-container > div.heading1 > h3{
-    font-size: 1.9rem;
-  }
-  body > main > div.newitems-container{
-    width: 83%;
-    margin: 122px 7%;
-  }
-  body > main > div.newitems-container > div.newitem-container{
-    width: 86px;
-    height: 209px;
-    margin: 52px 15px;
-
-  }
-  body > main > div.newitems-container > div.newitem-container > div.rating{
-    font-size: 9px;
-  }
-  body > main > div.newitems-container > div.newitem-container > div.rating > div.Wishlist{
-    margin-top: -28px;
-    margin-left: 60px;
-  }
-  body > main > div.newitems-container > div.newitem-container > div.company-name{
-    font-size: 13px;
-    margin-top: 6px;
-  }
-  body > main > div.newitems-container > div.newitem-container > div.item-name{
-    font-size: 11px;
-  }
-  body > main > div.newitems-container > div.newitem-container > div.price > span.current-price{
-    font-size: 9px;
-  }
-
-  body > main > div.newitems-container > div.newitem-container > div.price > span.original-price{
-    font-size: 8px;
-    margin-left: -1px;
-  }
-  body > main > div.items-container > div> div.rating > div > span{
-    font-size: 19px;
-    margin: 6px 26px;
-  }
-  body > main > div.woitems-container > div> div.rating > div > span{
-    font-size: 19px;
-    margin: 6px 26px;
-  }
-  body > main > div.newitems-container > div> div.rating > div > span{
-    font-size: 19px;
-    margin: 6px 26px;
-  }
-  body > main > div.newitems-container > div.newitem-container > div.price > span.discount{
-    font-size: 8px;
-    margin-left: -1px;
-    text-wrap: balance;
-  }
-  body > main > div.newitems-container > div.newitem-container > button.btn-add-bag{
-    font-size: 13px;
-    width: 84px;
-    padding: 1px 1px;
-    margin-top: 5px;
-  }
-  body > main > div.newitems-container > div.newitem-container > div.price{
-    margin-top: 6px;
-  }
-  body > main > div.items-container > div:nth-child(17){
-    display: none;
-  }
-  /* for footer */
-html body footer{
-  margin-left: 0px;
-  margin-top: 81px;
-}
-
-html body footer div.footer_container{
-  width: 100%;
-  margin-left:  0px; 
-}
-html body footer hr{
-  width: 100%;
-}
-html body footer div.footer_container div.footer_column h3{
-  font-size: 11px;
-}
-html body footer div.footer_container div.footer_column a{
-  font-size: 10px;
-}
-
-html body footer div.copyright{
-  font-size: 10px;
-  padding: 8px;
-  text-align: center;
-}
-}
-
-@media only screen and (width <= 390px) {
-  body{
+@media only screen and (min-width: 320px)and (max-width: 480px) {
+  body {
     width: 108%;
     margin: 2px -104px
   }
-  body > header{
-    width: 122%;
+
+  body>header {
+    width: 120%;
   }
+
   .myntra_home {
-    height: 37px; /* Adjust height as needed */
-    width: 37px;  /* Ensure width adjusts proportionally */
+    height: 37px;
+    /* Adjust height as needed */
+    width: 37px;
+    /* Ensure width adjusts proportionally */
     display: none;
   }
-  .nav_bar a{
+
+  .nav_bar a {
     display: none;
   }
-  .search_bar{
-    margin-left: -93%;
+
+  .search_bar {
+    margin-left: -95%;
     width: 17%;
   }
-  .nav-toggle{
+
+  .nav-toggle {
     position: absolute;
     margin-left: 123px;
+    display: block;
+    color: black;
   }
-  .search_icon{
+
+  .search_icon {
     padding: 7px;
   }
-  body > header > div.search_bar > input{
+
+  body>header>div.search_bar>input {
     font-size: 9px;
-        width: 112px;
-        height: 27px;
-        position: absolute;
-        margin: 2px 38px;
+    width: 112px;
+    height: 27px;
+    position: absolute;
+    margin: 2px 38px;
   }
-  body > header > div.search_bar > span{
+
+  body>header>div.search_bar>span {
     font-size: 19px;
     height: 7px;
     padding: 10px;
   }
-  body > header > div.action_bar > div{
+
+  body>header>div.action_bar>div {
     margin-top: 7px;
-    margin-left: -4px;
+    margin-left: 180px;
   }
-  body > header > div.action_bar > div > span.material-symbols-outlined.action_icon{
+
+  body>header>div.action_bar>div>span.material-symbols-outlined.action_icon {
     font-size: 24px;
-    margin-left: 166px;
-    margin-top: 8px;
+    margin-left: -51px;
+    margin-top: 6px;
   }
-  body > header > div.action_bar > div > span.action_name{
+
+  body>header>div.action_bar>div>span.action_name {
     font-size: 10px;
     margin-left: 140px;
   }
-  body > main > div.items-container > div> div.rating > div > span{
+
+  body>main>div.items-container>div>div.rating>div>span {
+    font-size: 18px;
+    margin: 6px 9px;
+  }
+
+  body>main>div.newitems-container>div>div.rating>div>span {
     font-size: 18px;
     margin: 6px 7px;
   }
-  body > main > div.newitems-container > div> div.rating > div > span{
-    font-size: 18px;
-    margin: 6px 7px;
+  body > footer > div.footer_container > div:nth-child(3){
+    display: none;
   }
-  body > header > div.action_bar > a:nth-child(2) > span.material-symbols-outlined.action_icon{
+  body>header>div.action_bar>a:nth-child(2)>span.material-symbols-outlined.action_icon {
     font-size: 23px;
     margin-top: 0px;
-    margin-left: -93px;
+    margin-left: 1px;
   }
-  body > header > div.action_bar > a:nth-child(3) > span.bag-items{
-    margin-left: -60px;
-    margin-top: 0px; 
 
-}
-body > header > div.action_bar > a:nth-child(2) > span.wish-items{
-  margin-left: -98px;
-  margin-top: 0px; 
- }
-  body > header > div.action_bar > a:nth-child(2) > span.action_name{
+  body>header>div.action_bar>a:nth-child(3)>span.bag-items {
+    margin-left: -22px;
+    margin-top: 0px;
+
+  }
+
+  body>header>div.action_bar>a:nth-child(2)>span.wish-items {
+    margin-left: -10px;
+    margin-top: 0px;
+  }
+
+  body>header>div.action_bar>a:nth-child(2)>span.action_name {
     font-size: 10px;
     margin-left: -111px;
   }
-  body > header > div.action_bar > a:nth-child(2) > span.Wishlist-items{
-    margin-left: -111px; 
+
+  body>header>div.action_bar>a:nth-child(2)>span.Wishlist-items {
+    margin-left: -111px;
   }
-  body > header > div.action_bar > a:nth-child(3) > span.material-symbols-outlined.action_icon{
+
+  body>header>div.action_bar>a:nth-child(3)>span.material-symbols-outlined.action_icon {
     font-size: 23px;
-    margin-top: 15px;
+    margin-top: 4px;
     color: black;
-    margin-left: -42px;
+    margin-left: -5px;
   }
-  body > header > div.action_bar > a:nth-child(3) > span.action_name{
+
+  body>header>div.action_bar>a:nth-child(3)>span.action_name {
     font-size: 10px;
     color: black;
     margin-left: -57px;
   }
-  body > header > div.action_bar > a:nth-child(2){
-    margin-left: -21%;
+
+  body>header>div.action_bar>a:nth-child(2) {
+    margin-left: -69%;
     display: flex;
     margin-top: 14px;
   }
-  .action_bar{
+
+  .action_bar {
     margin-left: -175px;
   }
-  .action_container{
-    margin-left: -9px;
+
+  .action_container {
+    margin-top: 8px;
+    margin-left: -22px;
   }
-  body > header > div:nth-child(4) > a > img{
+
+  body>header>div:nth-child(4)>a>img {
     height: 30px;
     width: 37px;
     margin-left: -53px;
   }
-  
+
 
   /* For products Body */
 
-  body > main > div.items-container> div.heading{
+  body>main>div.items-container>div.heading {
     margin-left: -182px;
     margin-top: -9px;
   }
-  body > main > div.items-container > div.heading > h3{
+
+  body>main>div.items-container>div.heading>h3 {
     font-size: 1.3rem;
     margin-left: 39px;
   }
-  body > main > div.items-container{
-    width: 85%;
-    margin: -19px 32%;
-  }
-  
-  body > main > div.items-container > div.item-container{
-    width: 71px;
-    height: 165px;
-    margin: 54px 10px;
-  }
-  body > main > div.items-container > div.item-container > div.rating{
-    font-size: 9px;
-  }
-  body > main > div.items-container > div.item-container > div.rating > div.Wishlist{
-    margin-top: -28px;
-    margin-left: 60px;
-  }
-  body > main > div.items-container > div.item-container > div.company-name{
-    font-size: 12px;
-    margin-top: 6px;
-  }
-  body > main > div.items-container > div.item-container > div.item-name{
-    font-size: 11px;
-  }
-  body > main > div.items-container > div.item-container > div.price > span.current-price{
-    font-size: 9px;
+
+  body>main>div.items-container {
+    width: 77%;
+    margin: 84px 32%
   }
 
-  body > main > div.items-container > div.item-container > div.price > span.original-price{
-    font-size: 8px;
-    margin-left: -1px;
-  }
-
-  body > main > div.items-container > div.item-container > div.price > span.discount{
-    font-size: 8px;
-    margin-left: -1px;
-    text-wrap: balance;
-  }
-  body > main > div.items-container > div.item-container > button.btn-add-bag{
-    font-size: 13px;
-    width: 84px;
-    padding: 1px 1px;
-    margin-top: 5px;
-  }
-  body > main > div.items-container > div.item-container > div.price{
-    margin-top: 6px;
-  }
-  body > main > div.items-container > div:nth-child(17){
-    display: none;
-  }
-  /* for TNew arrivals */
-  body > main > div.newitems-container> div.heading1{
-    margin-left: -166px;
-    margin-top: -28px;
-  }
-  body > main > div.newitems-container > div.heading1 > h3{
-    font-size: 1.3rem;
-    margin-left: 25px;
-  }
-  body > main > div.newitems-container{
-    width: 85%;
-    margin: 108px 32%;
-  }
-  
-  body > main > div.newitems-container > div.newitem-container{
-    width: 71px;
-    height: 165px;
-    margin: 54px 10px;
-  }
-  body > main > div.newitems-container > div.newitem-container > div.rating{
-    font-size: 9px;
-  }
-  body > main > div.newitems-container > div.newitem-container > div.rating > div.Wishlist{
-    margin-top: -28px;
-    margin-left: 60px;
-  }
-  body > main > div.newitems-container > div.newitem-container > div.company-name{
-    font-size: 13px;
-    margin-top: 6px;
-  }
-  body > main > div.newitems-container > div.newitem-container > div.item-name{
-    font-size: 11px;
-  }
-  body > main > div.newitems-container > div.newitem-container > div.price > span.current-price{
-    font-size: 9px;
-  }
-
-  body > main > div.newitems-container > div.newitem-container > div.price > span.original-price{
-    font-size: 8px;
-    margin-left: -1px;
-  }
-
-  body > main > div.newitems-container > div.newitem-container > div.price > span.discount{
-    font-size: 8px;
-    margin-left: -1px;
-    text-wrap: balance;
-  }
-  body > main > div.newitems-container > div.newitem-container > button.btn-add-bag{
-    font-size: 13px;
-    width: 84px;
-    padding: 1px 1px;
-    margin-top: 5px;
-  }
-  body > main > div.newitems-container > div.newitem-container > div.price{
-    margin-top: 6px;
-  }
-  
-  body > main > div.woitems-container> div.Men-heading1{
-    margin-left: -148px;
-    margin-top: -9px;
-  }
-  body > main > div.woitems-container > div.Men-heading1> h3{
-    font-size: 1.2rem;
-    margin: 4px 6px;
-
-  }
-  body > main > div.woitems-container> div.heading{
-    margin-left: -148px;
-    margin-top: -9px;
-  }
-  body > main > div.woitems-container > div.heading> h3{
-    margin-top: 4px;
-    margin-left: 6px;        
-    font-size: 1.2rem;
-  }
-  body > main > .woitems-container{
-    width: 83%;
-        margin: -19px 32%;
-  }
-  body > main > div.woitems-container > div:nth-child(17){
-    display: none;
-  }
-  body > main > div.woitems-container > div:nth-child(21){
-    display: none;
-  }
-  
-  body > main > div.woitems-container > div.newitem-container{
+  body>main>div.items-container>div.item-container {
     width: 71px;
     height: 165px;
     margin: 54px 7px;
   }
-  body > main > div.woitems-container > div.newitem-container > div.rating{
-    font-size: 9px;
-  }
-  body > main > div.woitems-container > div.newitem-container > div.rating > div.Wishlist{
-    margin-top: -28px;
-    margin-left: 60px;
-  }
-  body > main > div.woitems-container > div.newitem-container > div.company-name{
-    font-size: 13px;
-    margin-top: 6px;
-  }
-  body > main > div.woitems-container > div.newitem-container > div.item-name{
-    font-size: 11px;
-  }
-  body > main > div.woitems-container > div.newitem-container > div.price > span.current-price{
+
+  body>main>div.items-container>div.item-container>div.rating {
     font-size: 9px;
   }
 
-  body > main > div.woitems-container > div.newitem-container > div.price > span.original-price{
+  body>main>div.items-container>div.item-container>div.rating>div.Wishlist {
+    margin-top: -28px;
+    margin-left: 60px;
+  }
+
+  body>main>div.items-container>div.item-container>div.company-name {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+
+  body>main>div.items-container>div.item-container>div.item-name {
+    font-size: 11px;
+  }
+
+  body>main>div.items-container>div.item-container>div.price>span.current-price {
+    font-size: 9px;
+  }
+
+  body>main>div.items-container>div.item-container>div.price>span.original-price {
     font-size: 8px;
     margin-left: -1px;
   }
 
-  body > main > div.woitems-container > div.newitem-container > div.price > span.discount{
+  body>main>div.items-container>div.item-container>div.price>span.discount {
     font-size: 8px;
     margin-left: -1px;
     text-wrap: balance;
   }
-  body > main > div.woitems-container > div.newitem-container > button.btn-add-bag{
+
+  body>main>div.items-container>div.item-container>button.btn-add-bag {
     font-size: 13px;
     width: 84px;
     padding: 1px 1px;
     margin-top: 5px;
   }
-  body > main > div.woitems-container > div.newitem-container > div.price{
+
+  body>main>div.items-container>div.item-container>div.price {
     margin-top: 6px;
   }
-/* for footer */
-html body footer{
-  margin-left: 32px;
-  margin-top: 81px;
-}
-html body footer div.footer_container{
-  width: 100%;
-  margin-left:  78px; 
-}
-html body footer hr{
-  width: 123%;
-}
-html body footer div.footer_container div.footer_column h3{
-  font-size: 10px;
-}
-html body footer div.footer_container div.footer_column a{
-  font-size: 10px;
-}
 
-html body footer div.copyright{
-  font-size: 10px;
-  margin-left: 124px;
-}
-}
-
-@media only screen and (width > 480px){
-  .nav-toggle{
+  body>main>div.items-container>div:nth-child(17) {
     display: none;
   }
-  body > header > div:nth-child(4) > a > img{
+
+  /* for TNew arrivals */
+  body>main>div.newitems-container>div.heading1 {
+    margin-left: -166px;
+    margin-top: -28px;
+  }
+
+  body>main>div.newitems-container>div.heading1>h3 {
+    font-size: 1.3rem;
+    margin-left: 25px;
+  }
+
+  body>main>div.newitems-container {
+   width: 77%;
+        margin: 84px 32%
+  }
+
+  body>main>div.newitems-container>div.newitem-container {
+    width: 71px;
+    height: 165px;
+    margin: 54px 7px;
+  }
+
+  body>main>div.newitems-container>div.newitem-container>div.rating {
+    font-size: 9px;
+  }
+
+  body>main>div.newitems-container>div.newitem-container>div.rating>div.Wishlist {
+    margin-top: -28px;
+    margin-left: 60px;
+  }
+
+  body>main>div.newitems-container>div.newitem-container>div.company-name {
+    font-size: 13px;
+    margin-top: 6px;
+  }
+
+  body>main>div.newitems-container>div.newitem-container>div.item-name {
+    font-size: 11px;
+  }
+
+  body>main>div.newitems-container>div.newitem-container>div.price>span.current-price {
+    font-size: 9px;
+  }
+
+  body>main>div.newitems-container>div.newitem-container>div.price>span.original-price {
+    font-size: 8px;
+    margin-left: -1px;
+  }
+
+  body>main>div.newitems-container>div.newitem-container>div.price>span.discount {
+    font-size: 8px;
+    margin-left: -1px;
+    text-wrap: balance;
+  }
+
+  body>main>div.newitems-container>div.newitem-container>button.btn-add-bag {
+    font-size: 13px;
+    width: 84px;
+    padding: 1px 1px;
+    margin-top: 5px;
+  }
+
+  body>main>div.newitems-container>div.newitem-container>div.price {
+    margin-top: 6px;
+  }
+
+  body>main>div.woitems-container>div.Men-heading1 {
+    margin-left: -148px;
+    margin-top: -9px;
+  }
+
+  body>main>div.woitems-container>div.Men-heading1>h3 {
+    font-size: 1.2rem;
+    margin: 4px 6px;
+
+  }
+
+  body>main>div.woitems-container>div.heading {
+    margin-left: -148px;
+    margin-top: -9px;
+  }
+
+  body>main>div.woitems-container>div.heading>h3 {
+    margin-top: 4px;
+    margin-left: 6px;
+    font-size: 1.2rem;
+  }
+
+  body>main>.woitems-container {
+    width: 83%;
+    margin: -19px 27%;
+  }
+
+  body>main>div.woitems-container>div:nth-child(17) {
     display: none;
   }
-  
+
+  body>main>div.woitems-container>div:nth-child(21) {
+    display: none;
+  }
+
+  body>main>div.woitems-container>div.newitem-container {
+    width: 71px;
+    height: 165px;
+    margin: 54px 15px;
+  }
+
+  body>main>div.woitems-container>div.newitem-container>div.rating {
+    font-size: 9px;
+  }
+
+  body>main>div.woitems-container>div.newitem-container>div.rating>div.Wishlist {
+    margin-top: -28px;
+    margin-left: 60px;
+  }
+
+  body>main>div.woitems-container>div.newitem-container>div.company-name {
+    font-size: 13px;
+    margin-top: 6px;
+  }
+
+  body>main>div.woitems-container>div.newitem-container>div.item-name {
+    font-size: 11px;
+  }
+
+  body>main>div.woitems-container>div.newitem-container>div.price>span.current-price {
+    font-size: 9px;
+  }
+
+  body>main>div.woitems-container>div.newitem-container>div.price>span.original-price {
+    font-size: 8px;
+    margin-left: -1px;
+  }
+
+  body>main>div.woitems-container>div.newitem-container>div.price>span.discount {
+    font-size: 8px;
+    margin-left: -1px;
+    text-wrap: balance;
+  }
+
+  body>main>div.woitems-container>div.newitem-container>button.btn-add-bag {
+    font-size: 13px;
+    width: 84px;
+    padding: 1px 1px;
+    margin-top: 5px;
+  }
+
+  body>main>div.woitems-container>div.newitem-container>div.price {
+    margin-top: 6px;
+  }
+
+  /* for footer */
+  html body footer {
+    margin-left: 32px;
+    margin-top: 81px;
+  }
+
+  html body footer div.footer_container {
+    width: 100%;
+    margin-left: 78px;
+  }
+
+  html body footer hr {
+    width: 123%;
+  }
+
+  html body footer div.footer_container div.footer_column h3 {
+    font-size: 10px;
+  }
+
+  html body footer div.footer_container div.footer_column a {
+    font-size: 10px;
+  }
+
+  html body footer div.copyright {
+    font-size: 10px;
+    margin-left: 124px;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+
+  .nav-links a:hover {
+    background: #f5f5f5;
+  }
+
+  /* Show menu when toggled */
+  .nav-links.active {
+    display: flex;
+  }
 
 }
-@media only screen and (width <= 768px ) and (width > 480px){
-  .myntra_home{
+
+
+
+@media only screen and (min-width:490px) and (max-width : 1023px) {
+
+  .myntra_home {
     height: 26px;
     margin-left: -20px;
   }
-  
-  .nav_bar{
-    min-width: 428px;
+  .nav-toggle {
+    display: none;
   }
-  .nav_bar > a{
+  body > header {
+    width: 129%;
+  }
+  body>header>div:nth-child(4)>a>img {
+    display: none;
+  }
+  body > header {
+    width: 129%;
+  }
+
+
+  .nav_bar {
+    min-width: 428px;
+    padding: 2px 38px;
+    justify-content: normal;
+  }
+
+  .nav_bar>a {
     font-size: 12px;
   }
-  .search_bar{
+
+  .search_bar {
     width: 29%;
     min-width: 154px;
   }
-  .search_input{
+
+  
+body > main > div.woitems-container > div{
+  width: 174px;
+  margin: 30px 48px;
+}
+  .search_input {
     font-size: 9px;
   }
-  body > header > div.action_bar > a:nth-child(3){
+
+  body>header>div.action_bar>a:nth-child(3) {
     margin-top: 11px;
     margin-left: -25px;
   }
-  .action_bar{
+
+  .action_bar {
     min-width: 114px;
   }
-  body > header > div.search_bar > span{
+
+  body>header>div.search_bar>span {
     font-size: 23px;
   }
-  body > header > div.action_bar > div > span.material-symbols-outlined.action_icon{
+
+  body>header>div.action_bar>div>span.material-symbols-outlined.action_icon {
     font-size: 24px;
   }
-  body > header > div.action_bar > div > span.action_name{
+
+  body>header>div.action_bar>div>span.action_name {
     font-size: 13px;
   }
-  body > header > div.action_bar > a:nth-child(2){
+
+  body>header>div.action_bar>a:nth-child(2) {
     margin-left: -148px;
     margin-top: 13px;
   }
-  body > header > div.action_bar > div{
+
+  body>header>div.action_bar>div {
     margin-top: 11px;
     margin-left: 61px;
   }
-  body > header > div.action_bar > a:nth-child(2) > span.material-symbols-outlined.action_icon{
+
+  body>header>div.action_bar>a:nth-child(2)>span.material-symbols-outlined.action_icon {
     font-size: 22px;
   }
-  body > header > div.action_bar > a:nth-child(2) > span.action_name{
+
+  body>header>div.action_bar>a:nth-child(2)>span.action_name {
     font-size: 13px;
   }
-  body > header > div.action_bar > a:nth-child(3) > span.material-symbols-outlined.action_icon{
+
+  body>header>div.action_bar>a:nth-child(3)>span.material-symbols-outlined.action_icon {
     font-size: 23px;
   }
-  body > header > div.action_bar > a:nth-child(3) > span.action_name{
+
+  body>header>div.action_bar>a:nth-child(3)>span.action_name {
     font-size: 13px;
   }
-  .Men-heading1{
+
+  .Men-heading1 {
     margin-right: -640px;
-    margin-top: -32px; 
+    margin-top: -32px;
   }
-  body > main > div.woitems-container > div.Men-heading1 > h3{
+
+  body>main>div.woitems-container>div.Men-heading1>h3 {
     margin-left: -115px;
   }
-  
+
   /* for products */
-  .item-container , .newitem-container{
-    width: 130px;
-    margin: 53px 29px;
+  .item-container,
+  .newitem-container {
+    width: 174px;
+    margin: 30px 48px;
   }
-  body > main > div:nth-child(1){
-    width: 82%;
-    margin-left: 5%;
+
+  body>main>div:nth-child(1) {
+    width: 120%;
+margin-left: 0%;
+
   }
-  body > main > div.items-container > div> div.rating > div > span{
+ 
+  body>main>div.items-container>div>div.rating>div>span {
+    font-size: 25px;
+    margin: 9px 115px;
+  }
+
+  body>main>div.woitems-container>div>div.rating>div>span {
     font-size: 25px;
     margin: 9px 55px;
   }
-  body > main > div.woitems-container > div> div.rating > div > span{
+
+  body>main>div.newitems-container>div>div.rating>div>span {
     font-size: 25px;
     margin: 9px 55px;
   }
-  body > main > div.newitems-container > div> div.rating > div > span{
-    font-size: 25px;
-    margin: 9px 55px;
+
+  body>main>div.woitems-container>div.heading>h3 {
+    margin-left: -463px;
+    margin-top: -98px;
   }
-  body > main > div.woitems-container > div.heading > h3{
-    margin-right: -545px;
-  }
-  body > header > div.action_bar > a> span.material-symbols-outlined.action_icon{
+
+  body>header>div.action_bar>a>span.material-symbols-outlined.action_icon {
     font-size: 26px;
     color: black;
   }
-  .newitems-container{
-    width: 80%;
-    margin: 65px 10%;
+
+  .newitems-container {
+    width: 120%;
+    margin-left: 0%;
   }
-  .item-container  > img{
+
+  .item-container>img {
     width: 140%;
     height: 72%;
   }
-  .items-container   .heading{
-    margin-left: -437px;
+
+  .items-container .heading {
+    margin-left: -563px;
     margin-top: -35px;
   }
-  body > main > div.items-container > div.heading > h3{
+
+  body>main>div.items-container>div.heading>h3 {
     font-size: 2rem;
   }
-   div.rating > div{
+
+  div.rating>div {
     margin-left: 102px;
   }
-  .newitem-container  > img{
+
+  .newitem-container>img {
     width: 140%;
     height: 72%;
   }
-  body > main > div.newitems-container > div.heading1{
-    margin-left: -437px;
+
+  body>main>div.newitems-container>div.heading1 {
+    margin-left: -580px;
     margin-top: -47px;
   }
-  body > main > div.newitems-container > div.heading1 > h3{
+
+  body>main>div.newitems-container>div.heading1>h3 {
     font-size: 2rem;
   }
-  .rating{
+
+  .rating {
     font-size: 10px;
   }
-  .company-name{
+
+  .company-name {
     font-size: 15px;
   }
-  .item-name{
+
+  .item-name {
     font-size: 13px;
   }
-  span.current-price{
+
+  span.current-price {
     font-size: 11px;
   }
-  span.original-price{
-    font-size: 11px;
-    margin-left: 0px;
-  }
-  span.discount{
+
+  span.original-price {
     font-size: 11px;
     margin-left: 0px;
   }
-  .btn-add-bag{
+
+  span.discount {
+    font-size: 11px;
+    margin-left: 0px;
+  }
+
+  .btn-add-bag {
     font-size: 14px;
     width: 140%;
 
   }
+
   /* for fotter */
-  body > footer > div.copyright{
+  body>footer>div.copyright {
     text-align: center;
   }
-  body > footer > hr{
-    width: 100%;
+  body > header > a {
+    display: none;
   }
+  body>footer>hr {
+    width: 129%;
+  }
+  body > header > a{
+    display: none;
+  }
+  body > footer > div.footer_container{
+  width: 129%;
+}
   /* /* for Bag Items */
   /* body > header{
     width: 120%;
@@ -803,6 +653,7 @@ html body footer div.copyright{
     margin-left: -103px
   }  */
 }
+
 /* @media only screen and (min-width: 1024px) and (max-width: 1024px) {
   body > main > div.woitems-container > div.Men-heading1 > h3 {
       margin-left: 11px;
@@ -810,41 +661,3 @@ html body footer div.copyright{
 } */
 
 
-/* Hide menu links on small screens */
-@media only screen and (max-width: 700px) {
-  .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background: white;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 10px 0;
-  }
-  
-  .nav-links a {
-      display: block;
-      padding: 10px;
-      text-align: center;
-      text-decoration: none;
-      color: black;
-      font-size: 16px;
-  }
-
-  .nav-links a:hover {
-      background: #f5f5f5;
-  }
-
-  /* Show menu when toggled */
-  .nav-links.active  {
-      display: flex;
-  }
-
-  /* Style the menu button */
-  /* body > header > nav > div > a{
-    padding:0px 40px;
-
-} */
-}

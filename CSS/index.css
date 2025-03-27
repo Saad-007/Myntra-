@@ -274,7 +274,9 @@ header {
     text-decoration: none;
     padding-bottom: 5px;
 }
-
+body > header > a{
+    display: none;
+}
 .copyright {
     color: #94969f;
     text-align: center;

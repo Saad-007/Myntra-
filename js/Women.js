@@ -122,7 +122,7 @@ function displayItemsOnHomepage() {
         <div class="newitem-container">
             <img class="item-img" src="${isitem.image}" alt="${isitem.item_name}">
             <div class="rating">
-            <div class="Wishlist"><span class="material-symbols-outlined action_icon"onclick="addToWishlist('${isitem.id}')">favorite</span></div>
+            <div class="Wishlist"><span class="material-symbols-outlined action_icon"onclick="addTowish('${isitem.id}')">favorite</span></div>
                 ${isitem.rating.stars}⭐ | ${isitem.rating.count}
             </div>
             <div class="company-name">${isitem.company}</div>

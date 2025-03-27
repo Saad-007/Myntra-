@@ -16,6 +16,13 @@ window.Home = window.Home || [];
 const allItems = [...items, ...New, ...Women, ...Men, ...Beauty, ...Home];
 
 document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle=document.querySelector('.nav-toggle');
+    const navLinks=document.querySelector('.nav-links');
+
+    menuToggle?.addEventListener("click",function(event){
+        event.preventDefault();
+        navLinks.classList.toggle("active");
+    })
     console.log("✅ DOM fully loaded");
 
     function checkElements() {

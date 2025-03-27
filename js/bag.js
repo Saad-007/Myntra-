@@ -19,6 +19,13 @@ console.log("🛒 All Items:", allItems);
 console.log("👜 Bag Items (IDs):", window.bagItems);
 
 document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle=document.querySelector('.nav-toggle');
+    const navLink=this.documentElement.querySelector('.nav-links');
+
+    menuToggle?.addEventListener("click",function(event){
+        event.preventDefault();
+        navLink.classList.toggle("active");
+    })
     console.log("✅ DOM fully loaded");
     ensureBagSummaryExists();
     onLoad();
