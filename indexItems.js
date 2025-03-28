@@ -1,7 +1,7 @@
 const items = [
     {
         id: '001',
-        image: './assets/img/Women/10.jpg',
+        image: '../assets/img/Women/10.jpg',
         company: 'Spankle',
         item_name: `Ribbed T-shirt`,
         original_price: 999,
@@ -17,7 +17,7 @@ const items = [
     },
     {
         id: '002',
-        image: './assets/img/Men/3.jpg',
+        image: '../assets/img/Men/3.jpg',
         company: 'GRACE KARIN',
         item_name: 'GRACE KARIN Girls Summer Dress',
         original_price: 1599,
@@ -32,7 +32,7 @@ const items = [
     },
     {
         id: '003',
-        image: './assets/img/Beauty/4.jpg',
+        image: '../assets/img/Beauty/4.jpg',
         company: 'WDIRARA',
         item_name: `Slim Fit Linen Shirt`,
         original_price: 1599,
@@ -47,7 +47,7 @@ const items = [
     },
     {
         id: '004',
-        image: './assets/img/Women/7.jpg',
+        image: '../assets/img/Women/7.jpg',
         company: 'Carpie',
         item_name: `Oversized T-shirt`,
         original_price: 1899,
