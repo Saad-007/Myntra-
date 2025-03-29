@@ -7,7 +7,7 @@ function fixImagePath(imagePath) {
 const items = [
     {
         id: '001',
-        image:fixImagePath('assets/img/Women/10.jpg'),
+        image:fixImagePath('/assets/img/Women/10.jpg'),
         company: 'Spankle',
         item_name: `Ribbed T-shirt`,
         original_price: 999,
@@ -23,7 +23,7 @@ const items = [
     },
     {
         id: '002',
-        image: fixImagePath('assets/img/Men/3.jpg'),
+        image: fixImagePath('/assets/img/Men/3.jpg'),
         company: 'GRACE KARIN',
         item_name: 'GRACE KARIN Girls Summer Dress',
         original_price: 1599,
