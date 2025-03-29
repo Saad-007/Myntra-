@@ -1,5 +1,7 @@
 function fixImagePath(imagePath) {
-    return new URL(imagePath, window.location.origin + "/MYNTRA").href;
+    // Check if the current page is inside the /pages/ folder
+    let basePath = window.location.pathname.includes('/pages/') ? '../' : './';
+    return basePath + imagePath;
 }
 
 
@@ -7,7 +9,7 @@ function fixImagePath(imagePath) {
 const items = [
     {
         id: '001',
-        image:fixImagePath('/assets/img/Women/10.jpg'),
+        image:fixImagePath('assets/img/Women/10.jpg'),
         company: 'Spankle',
         item_name: `Ribbed T-shirt`,
         original_price: 999,
@@ -23,7 +25,7 @@ const items = [
     },
     {
         id: '002',
-        image: fixImagePath('/assets/img/Men/3.jpg'),
+        image: fixImagePath('assets/img/Men/3.jpg'),
         company: 'GRACE KARIN',
         item_name: 'GRACE KARIN Girls Summer Dress',
         original_price: 1599,
