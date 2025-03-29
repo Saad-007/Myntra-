@@ -1,6 +1,7 @@
 function fixImagePath(imagePath) {
-    return `${window.location.origin}/assets/img/${imagePath.split('/').slice(-2).join('/')}`;
+    return `${window.location.origin}/${imagePath}`;
 }
+
 
 
 
