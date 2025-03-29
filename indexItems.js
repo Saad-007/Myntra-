@@ -1,5 +1,5 @@
 function fixImagePath(imagePath) {
-    return "/assets/img/" + imagePath.split('/').slice(-2).join('/');
+    return new URL(imagePath, window.location.origin).href;
 }
 
 
