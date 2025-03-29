@@ -1,14 +1,13 @@
 function fixImagePath(imagePath) {
-    if (imagePath.startsWith("/")) {
-        return window.location.origin + imagePath;
-    }
-    return new URL(imagePath, document.baseURI).href;
+    const basePath = window.location.origin + "/MYNTRA"; // Adjust 'MYNTRA' to your repo name
+    return new URL(imagePath, basePath).href;
 }
+
 
 const items = [
     {
         id: '001',
-        image:fixImagePath('/assets/img/Women/10.jpg'),
+        image:fixImagePath('assets/img/Women/10.jpg'),
         company: 'Spankle',
         item_name: `Ribbed T-shirt`,
         original_price: 999,
@@ -24,7 +23,7 @@ const items = [
     },
     {
         id: '002',
-        image: fixImagePath('/assets/img/Men/3.jpg'),
+        image: fixImagePath('assets/img/Men/3.jpg'),
         company: 'GRACE KARIN',
         item_name: 'GRACE KARIN Girls Summer Dress',
         original_price: 1599,
@@ -39,7 +38,7 @@ const items = [
     },
     {
         id: '003',
-        image: fixImagePath('/assets/img/Beauty/4.jpg'),
+        image: fixImagePath('assets/img/Beauty/4.jpg'),
         company: 'WDIRARA',
         item_name: `Slim Fit Linen Shirt`,
         original_price: 1599,
@@ -54,7 +53,7 @@ const items = [
     },
     {
         id: '004',
-        image: fixImagePath('/assets/img/Women/7.jpg'),
+        image: fixImagePath('assets/img/Women/7.jpg'),
         company: 'Carpie',
         item_name: `Oversized T-shirt`,
         original_price: 1899,
@@ -69,7 +68,7 @@ const items = [
     },
     {
         id: '005',
-        image: fixImagePath('/assets/img/Home/3.jpg'),
+        image: fixImagePath('assets/img/Home/3.jpg'),
         company: 'GRACE KARIN',
         item_name: '2-pack Airy Multiway Curtains',
         original_price: 1599,
@@ -84,7 +83,7 @@ const items = [
     },
     {
         id: '006',
-        image: fixImagePath('/assets/img/Women/15.jpg'),
+        image: fixImagePath('assets/img/Women/15.jpg'),
         company: 'Shaza',
         item_name: 'Wide-cut Pull-on Pants',
         original_price: 999,
@@ -99,7 +98,7 @@ const items = [
     },
     {
         id: '007',
-        image: fixImagePath('/assets/img/Beauty/3.jpg'),
+        image: fixImagePath('assets/img/Beauty/3.jpg'),
         company: 'GRACE KARIN',
         item_name: 'GRACE KARIN Girls Summer Dress',
         original_price: 1599,
@@ -114,7 +113,7 @@ const items = [
     },
     {
         id: '008',
-        image: fixImagePath('/assets/img/Men/4..jpg'),
+        image: fixImagePath('assets/img/Men/4..jpg'),
         company: 'WDIRARA',
         item_name: `Slim Fit Linen Shirt`,
         original_price: 1599,
@@ -129,7 +128,7 @@ const items = [
     },
     {
         id: '009',
-        image: fixImagePath('/assets/img/Women/14.jpg'),
+        image: fixImagePath('assets/img/Women/14.jpg'),
         company: 'Silvia',
         item_name: 'A-Line Tie-Strap Dress',
         original_price: 5999,
@@ -144,7 +143,7 @@ const items = [
     },
     {
         id: '010',
-        image: fixImagePath('/assets/img/Home/10.jpg'),
+        image: fixImagePath('assets/img/Home/10.jpg'),
         company: 'Poque Stuke',
         item_name: `Tall Terracotta Vase`,
         original_price: 5999,
@@ -159,7 +158,7 @@ const items = [
     },
     {
         id: '011',
-        image: fixImagePath('/assets/img/Beauty/1.jpg'),
+        image: fixImagePath('assets/img/Beauty/1.jpg'),
         company: 'Carlton London',
         item_name: 'Relaxed Fit Linen Resort Shirt',
         original_price: 1045,
@@ -174,7 +173,7 @@ const items = [
     },
     {
         id: '012',
-        image: fixImagePath('/assets/img/Men/7.jpg'),
+        image: fixImagePath('assets/img/Men/7.jpg'),
         company: 'LYANER',
         item_name: `Relaxed Fit Linen Resort Shirt`,
         original_price: 999,
@@ -189,7 +188,7 @@ const items = [
     },
     {
         id: '013',
-        image: fixImagePath('/assets/img/Home/8.jpg'),
+        image: fixImagePath('assets/img/Home/8.jpg'),
         company: 'Belle Poque',
         item_name: `Muslin Queen Duvet Cover Set`,
         original_price: 999,
@@ -204,7 +203,7 @@ const items = [
     },
     {
         id: '014',
-        image: fixImagePath('/assets/img/Men/15.jpg'),
+        image: fixImagePath('assets/img/Men/15.jpg'),
         company: 'Squish',
         item_name: `Regular Fit Linen-blend Shirt`,
         original_price: 2999,
@@ -220,7 +219,7 @@ const items = [
     },
     {
         id: '015',
-        image: fixImagePath('/assets/img/Women/9.jpg'),
+        image: fixImagePath('assets/img/Women/9.jpg'),
         company: 'Arshiner',
         item_name: 'Oversized Printed T-shirt',
         original_price: 999,
@@ -235,7 +234,7 @@ const items = [
     },
     {
         id: '016',
-        image: fixImagePath('/assets/img/Beauty/6.jpg'),
+        image: fixImagePath('assets/img/Beauty/6.jpg'),
         company: 'Arshiner',
         item_name: 'Oversized Printed T-shirt',
         original_price: 999,
@@ -251,7 +250,7 @@ const items = [
     },
     {
         id: '017',
-        image: fixImagePath('/assets/img/18.jpg'),
+        image: fixImagePath('assets/img/18.jpg'),
         company: 'NUEVOSDAMAS',
         item_name: 'Balloon-sleeved shirt dress',
         original_price: 1599,
@@ -269,7 +268,7 @@ const items = [
 const New = [
     {
         id: '015',
-        image: fixImagePath('/assets/img/Women/16.jpg'),
+        image: fixImagePath('assets/img/Women/16.jpg'),
         company: 'Carlton London',
         item_name: 'Kaftan dress',
         original_price: 1045,
@@ -282,7 +281,7 @@ const New = [
     },
     {
         id: '00016',
-        image: fixImagePath('/assets/img/Beauty/016.jpg'),
+        image: fixImagePath('assets/img/Beauty/016.jpg'),
         company: 'CUKOO',
         item_name: 'Angled Contouring Brush',
         original_price: 2599,
@@ -294,7 +293,7 @@ const New = [
     },
     {
         id: '017',
-        image: fixImagePath('/assets/img/Women/18.jpg'),
+        image: fixImagePath('assets/img/Women/18.jpg'),
         company: 'NUEVOSDAMAS',
         item_name: 'Balloon-sleeved shirt dress',
         original_price: 1599,
@@ -306,7 +305,7 @@ const New = [
     },
     {
         id: '0015',
-        image: fixImagePath('/assets/img/Women/0015.jpg'),
+        image: fixImagePath('assets/img/Women/0015.jpg'),
         company: 'Carlton London',
         item_name: 'Kaftan dress',
         original_price: 1045,
@@ -318,7 +317,7 @@ const New = [
     },
     {
         id: '00018',
-        image: fixImagePath('/assets/img/Beauty/018.jpg'),
+        image: fixImagePath('assets/img/Beauty/018.jpg'),
         company: 'Sunan',
         item_name: 'Makeup Brush Case',
         original_price: 999,
@@ -330,7 +329,7 @@ const New = [
     },
     {
         id: '0016',
-        image: fixImagePath('/assets/img/Women/0016.jpg'),
+        image: fixImagePath('assets/img/Women/0016.jpg'),
         company: 'CUKOO',
         item_name: 'Flounced chiffon dress',
         original_price: 2599,
@@ -342,7 +341,7 @@ const New = [
     },
     {
         id: '018',
-        image: fixImagePath('/assets/img/Women/19.jpg'),
+        image: fixImagePath('assets/img/Women/19.jpg'),
         company: 'Sunan',
         item_name: 'Viscose tunic dress',
         original_price: 999,
@@ -354,7 +353,7 @@ const New = [
     },
     {
         id: '0018',
-        image: fixImagePath('/assets/img/Women/0018.jpg'),
+        image: fixImagePath('assets/img/Women/0018.jpg'),
         company: 'Sunan',
         item_name: 'Viscose tunic dress',
         original_price: 999,
@@ -366,7 +365,7 @@ const New = [
     },
     {
         id: '00015',
-        image: fixImagePath('/assets/img/Beauty/015.jpg'),
+        image: fixImagePath('assets/img/Beauty/015.jpg'),
         company: 'Carlton London',
         item_name: '3-pack Mini Lip Glosses',
         original_price: 1045,
@@ -378,7 +377,7 @@ const New = [
     },
     {
         id: '016',
-        image: fixImagePath('/assets/img/Women/17.jpg'),
+        image: fixImagePath('assets/img/Women/17.jpg'),
         company: 'CUKOO',
         item_name: 'Flounced chiffon dress',
         original_price: 2599,
@@ -390,7 +389,7 @@ const New = [
     },
     {
         id: '00017',
-        image: fixImagePath('/assets/img/Beauty/017.jpg'),
+        image: fixImagePath('assets/img/Beauty/017.jpg'),
         company: 'NUEVOSDAMAS',
         item_name: 'Eyeshadow Brush',
         original_price: 1599,
@@ -402,7 +401,7 @@ const New = [
     },
     {
         id: '0017',
-        image: fixImagePath('/assets/img/Women/0017.jpg'),
+        image: fixImagePath('assets/img/Women/0017.jpg'),
         company: 'NUEVOSDAMAS',
         item_name: 'Balloon-sleeved shirt dress',
         original_price: 1599,
