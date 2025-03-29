@@ -1,9 +1,7 @@
 function fixImagePath(imagePath) {
-    // Count how many levels deep we are ("/pages/bag.html" -> needs "../")
-    let depth = window.location.pathname.split('/').length - 2;
-    let prefix = depth > 0 ? '../'.repeat(depth) : '';
-    return prefix + imagePath;
+    return "/assets/img/" + imagePath.split('/').slice(-2).join('/');
 }
+
 
 
 
