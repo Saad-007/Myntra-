@@ -1,7 +1,7 @@
 function fixImagePath(imagePath) {
-    const basePath = window.location.origin + "/MYNTRA"; // Adjust 'MYNTRA' to your repo name
-    return new URL(imagePath, basePath).href;
+    return new URL(imagePath, window.location.href).href;
 }
+
 
 
 const items = [
