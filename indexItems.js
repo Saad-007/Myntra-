@@ -282,7 +282,7 @@ const New = [
     },
     {
         id: '00016',
-        image: fixImagePath('assets/img/Beauty/016.jpg'),
+        image: fixImagePath('assets/img/Beauty/6.jpg'),
         company: 'CUKOO',
         item_name: 'Angled Contouring Brush',
         original_price: 2599,
@@ -294,7 +294,7 @@ const New = [
     },
     {
         id: '017',
-        image: fixImagePath('assets/img/Women/18.jpg'),
+        image: fixImagePath('assets/img/Women/13.jpg'),
         company: 'NUEVOSDAMAS',
         item_name: 'Balloon-sleeved shirt dress',
         original_price: 1599,
@@ -306,7 +306,7 @@ const New = [
     },
     {
         id: '0015',
-        image: fixImagePath('assets/img/Women/0015.jpg'),
+        image: fixImagePath('assets/img/Women/15.jpg'),
         company: 'Carlton London',
         item_name: 'Kaftan dress',
         original_price: 1045,
@@ -318,7 +318,7 @@ const New = [
     },
     {
         id: '00018',
-        image: fixImagePath('assets/img/Beauty/018.jpg'),
+        image: fixImagePath('assets/img/Beauty/12.jpg'),
         company: 'Sunan',
         item_name: 'Makeup Brush Case',
         original_price: 999,
@@ -330,7 +330,7 @@ const New = [
     },
     {
         id: '0016',
-        image: fixImagePath('assets/img/Women/0016.jpg'),
+        image: fixImagePath('assets/img/Women/60.jpg'),
         company: 'CUKOO',
         item_name: 'Flounced chiffon dress',
         original_price: 2599,
@@ -342,7 +342,7 @@ const New = [
     },
     {
         id: '018',
-        image: fixImagePath('assets/img/Women/19.jpg'),
+        image: fixImagePath('assets/img/Women/5.jpg'),
         company: 'Sunan',
         item_name: 'Viscose tunic dress',
         original_price: 999,
@@ -354,7 +354,7 @@ const New = [
     },
     {
         id: '0018',
-        image: fixImagePath('assets/img/Women/0018.jpg'),
+        image: fixImagePath('assets/img/Men/2.jpg'),
         company: 'Sunan',
         item_name: 'Viscose tunic dress',
         original_price: 999,
@@ -366,7 +366,7 @@ const New = [
     },
     {
         id: '00015',
-        image: fixImagePath('assets/img/Beauty/015.jpg'),
+        image: fixImagePath('assets/img/Beauty/3.jpg'),
         company: 'Carlton London',
         item_name: '3-pack Mini Lip Glosses',
         original_price: 1045,
@@ -378,7 +378,7 @@ const New = [
     },
     {
         id: '016',
-        image: fixImagePath('assets/img/Women/17.jpg'),
+        image: fixImagePath('assets/img/Home/2.jpg'),
         company: 'CUKOO',
         item_name: 'Flounced chiffon dress',
         original_price: 2599,
@@ -390,7 +390,7 @@ const New = [
     },
     {
         id: '00017',
-        image: fixImagePath('assets/img/Beauty/017.jpg'),
+        image: fixImagePath('assets/img/Beauty/7.jpg'),
         company: 'NUEVOSDAMAS',
         item_name: 'Eyeshadow Brush',
         original_price: 1599,
@@ -402,7 +402,7 @@ const New = [
     },
     {
         id: '0017',
-        image: fixImagePath('assets/img/Women/0017.jpg'),
+        image: fixImagePath('assets/img/Women/13.jpg'),
         company: 'NUEVOSDAMAS',
         item_name: 'Balloon-sleeved shirt dress',
         original_price: 1599,
