@@ -1,8 +1,7 @@
 function fixImagePath(imagePath) {
-    // Check if the current page is inside the /pages/ folder
-    let basePath = window.location.pathname.includes('/pages/') ? '../' : './';
-    return basePath + imagePath;
+    return window.location.origin + "/assets/img/" + imagePath.split('/').slice(-2).join('/');
 }
+
 
 
 
