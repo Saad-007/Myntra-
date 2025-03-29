@@ -1,5 +1,5 @@
 function fixImagePath(imagePath) {
-    return new URL(imagePath, window.location.href).href;
+    return new URL(imagePath, window.location.origin + "/MYNTRA").href;
 }
 
 
