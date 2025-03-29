@@ -1,6 +1,7 @@
 function fixImagePath(imagePath) {
-    return `${window.location.origin}/${imagePath}`;
+    return new URL(imagePath, window.location.origin + window.location.pathname).href;
 }
+
 
 
 
