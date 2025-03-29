@@ -1,15 +1,7 @@
 function fixImagePath(imagePath) {
-    const repoName = "Myntra-"; // Replace with your actual GitHub repo name
-    const basePath = window.location.origin + "/" + repoName + "/";
-    return new URL(imagePath, basePath).href;
+    const repoName = "Myntra"; // Replace with your actual GitHub repo name
+    return `${window.location.origin}/${repoName}/${imagePath}`;
 }
-
-
-
-
-
-
-
 
 
 const items = [
