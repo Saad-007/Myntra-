@@ -1,6 +1,7 @@
 function fixImagePath(imagePath) {
-    return new URL(imagePath, window.location.origin).href;
+    return `${window.location.origin}/assets/img/${imagePath.split('/').slice(-2).join('/')}`;
 }
+
 
 
 
