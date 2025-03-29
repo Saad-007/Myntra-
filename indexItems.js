@@ -1,5 +1,6 @@
 function fixImagePath(imagePath) {
-    return new URL(imagePath, window.location.origin + window.location.pathname).href;
+    const basePath = window.location.origin + window.location.pathname;
+    return new URL(imagePath, basePath).href;
 }
 
 
